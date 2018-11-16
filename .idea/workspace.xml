@@ -1,0 +1,1676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="FINAL-PROJECT-NHOM4-V4:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9d7aa17b-25ce-41bd-a5d1-1fb488fe46cf" name="Default Changelist" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/FINAL-PROJECT-NHOM4-V4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/controllers/nguoidungadmin/NguoiDungAdminServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/controllers/nguoidungadmin/SuaNguoiDungAdminServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/controllers/nguoidungadmin/ThemAdminServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/controllers/nguoidungadmin/XemAdminServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/controllers/nguoidungthongthuong/NguoiDungThongThuongServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/controllers/nguoidungthongthuong/SuaNguoiDungThongThuongServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/controllers/nguoidungthongthuong/ThemNguoiDungThongThuongServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/controllers/nguoidungthongthuong/XemNguoiDungThongThuongServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/controllers/nguoidungthongthuong/XoaNguoiDungThongThuongServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/controllers/quyen/QuyenServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/controllers/quyen/SuaQuyenServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/controllers/quyen/ThemQuyenServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/models/businessmodels/Business.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/models/businessmodels/ConnectDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/models/businessmodels/NghiepVuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/models/businessmodels/NguoiDungAdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/models/businessmodels/NguoiDungThongThuongService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/models/businessmodels/QuyenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/models/datamodels/NghiepVu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/models/datamodels/NguoiDung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/models/datamodels/Quyen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banhaisan/models/viewmodels/QuyenVM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/About.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/ChiTietAdmin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/ChiTietBaiViet.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/ChiTietNguoiDung.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/ChiTietSanPham.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/ChinhSuaAdmin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/ChinhSuaBaiViet.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/ChinhSuaDanhMuc.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/ChinhSuaNguoiDung.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/ChinhSuaQuyen.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/ChinhSuaSanPham.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/ChinhSuaThongTinCaNhan.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/DoiMatKhau.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/PhanQuyenAdmin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/QLyDanhMuc.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/QLySanPham.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/QlyAdmin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/QlyBaiViet.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/QlyDonHang.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/QlyNguoiDungThongThuong.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/QlyQuyen.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/TMAdmin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/TMBaiViet.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/TMDanhMuc.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/TMNguoiDung.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/TMQuyen.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/TMSanPham.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/ThongTinCaNhan.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/ThongTinQuyen_Info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/XemDonHang.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/assets/DT_bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/assets/form-validation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/assets/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/assets/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/bootstrap/css/bootstrap-responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/bootstrap/css/bootstrap-responsive.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/bootstrap/img/glyphicons-halflings-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/bootstrap/img/glyphicons-halflings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/images/bg-input-focus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/images/bg-input.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/images/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/.settings/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/Gemfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/Gemfile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/LICENCE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/Rakefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/VERSION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/dist/bootstrap-wysihtml5-0.0.2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/dist/bootstrap-wysihtml5-0.0.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/dist/bootstrap-wysihtml5-0.0.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/lib/css/bootstrap-responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/lib/css/bootstrap-responsive.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/lib/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/lib/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/lib/css/prettify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/lib/css/wysiwyg-color.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/lib/img/glyphicons-halflings-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/lib/img/glyphicons-halflings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/lib/js/bootstrap-button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/lib/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/lib/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/lib/js/jquery-1.7.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/lib/js/prettify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/lib/js/wysihtml5-0.3.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/lib/js/wysihtml5-0.3.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/readme.textile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/bootstrap-wysihtml5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/bootstrap-wysihtml5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.ar-AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.bg-BG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.ca-CT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.cs-CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.da-DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.de-DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.el-GR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.es-AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.es-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.fr-FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.hr-HR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.it-IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.ja-JP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.ko-KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.lt-LT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.mo-MD.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.nb-NB.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.nl-NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.pl-PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.ru-RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.sk-SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.sv-SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.tr-TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.ua-UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/locales/bootstrap-wysihtml5.zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/src/wysiwyg-color.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/test/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/test/bootstrap_wysihtml5/parserRules_test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/test/browser_test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/test/editor_test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/test/incompatible_test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/test/lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/test/support/html_equal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/bootstrap-wysihtml5/test/undo_manager_test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/chosen-sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/chosen-sprite@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/chosen.jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/chosen.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/CHANGES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/adapters/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/build-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/ckeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/contents.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/about/dialogs/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/clipboard/dialogs/paste.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/colordialog/dialogs/colordialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/dialog/dialogDefinition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/div/dialogs/div.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/fakeobjects/images/spacer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/find/dialogs/find.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/flash/dialogs/flash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/flash/images/placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/forms/dialogs/button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/forms/dialogs/checkbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/forms/dialogs/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/forms/dialogs/hiddenfield.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/forms/dialogs/radio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/forms/dialogs/select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/forms/dialogs/textarea.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/forms/dialogs/textfield.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/forms/images/hiddenfield.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/iframe/dialogs/iframe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/iframe/images/placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/image/dialogs/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/image/images/noimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/link/dialogs/anchor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/link/dialogs/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/link/images/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/link/images/hidpi/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/liststyle/dialogs/liststyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/magicline/images/hidpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/magicline/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/pagebreak/images/pagebreak.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/pastefromword/filter/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/preview/preview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/scayt/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/scayt/dialogs/options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/showblocks/images/block_address.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/showblocks/images/block_blockquote.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/showblocks/images/block_div.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/showblocks/images/block_h1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/showblocks/images/block_h2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/showblocks/images/block_h3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/showblocks/images/block_h4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/showblocks/images/block_h5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/showblocks/images/block_h6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/showblocks/images/block_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/showblocks/images/block_pre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/dialogs/smiley.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/angel_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/angry_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/broken_heart.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/confused_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/cry_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/devil_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/embaressed_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/embarrassed_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/envelope.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/heart.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/kiss.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/lightbulb.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/omg_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/regular_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/sad_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/shades_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/teeth_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/thumbs_down.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/thumbs_up.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/tongue_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/tounge_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/smiley/images/wink_smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/table/dialogs/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/templates/dialogs/templates.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/templates/dialogs/templates.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/templates/templates/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/templates/templates/images/template1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/templates/templates/images/template2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/templates/templates/images/template3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/wsc/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/wsc/dialogs/tmp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/wsc/dialogs/wsc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/appendto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/assets/inlineall/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/assets/outputxhtml/outputxhtml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/assets/posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/assets/sample.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/assets/sample.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/assets/uilanguages/languages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/datafiltering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/divreplace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/inlineall.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/inlinebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/inlinetextarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/jquery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/plugins/dialog/assets/my_dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/plugins/dialog/dialog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/plugins/enterkey/enterkey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/plugins/htmlwriter/outputforflash.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/plugins/htmlwriter/outputhtml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/plugins/magicline/magicline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/plugins/toolbar/toolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/plugins/wysiwygarea/fullpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/readonly.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/replacebyclass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/replacebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/sample.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/sample_posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/tabindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/uicolor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/uilanguages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/samples/xhtmlstyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/dialog_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/dialog_ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/dialog_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/dialog_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/dialog_opera.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/editor_gecko.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/editor_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/editor_ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/editor_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/editor_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/images/hidpi/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/images/hidpi/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/images/hidpi/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/images/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/images/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/images/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/skins/moono/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/ckeditor/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/css/demo_page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/css/demo_table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/css/demo_table_jui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/css/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/css/jquery.dataTables_themeroller.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/images/Sorting icons.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/images/back_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/images/back_enabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/images/back_enabled_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/images/forward_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/images/forward_enabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/images/forward_enabled_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/DataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/api/api.internal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/api/api.methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/api/api.static.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.columns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.constructor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.draw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.length.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.processing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.scrolling.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.sizing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/core/core.support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/ext/ext.classes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/ext/ext.paging.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/ext/ext.sorting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/ext/ext.types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/model/model.column.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/model/model.defaults.columns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/model/model.defaults.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/model/model.ext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/model/model.row.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/model/model.search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/src/model/model.settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/performance/draw.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/performance/large.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/performance/page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/performance/sort.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/templates/-complex_header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/templates/2512.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/templates/6776.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/templates/complex_header_2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/templates/deferred_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/templates/dom_data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/templates/dom_data_th.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/templates/dom_data_two_headers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/templates/dymanic_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/templates/empty_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/templates/html_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/templates/js_data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/templates/js_data_mixed_types.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/templates/two_tables.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests/1_dom/_zero_config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/-complex_header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/-iDraw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/2512.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/2530-2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/2530.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/2569.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/2600.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/2608.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/2635.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/2746-stable-sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/2799.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/2840-restore-table-width.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/2914-state-save-sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/5396-fnUpdate-arrays-mData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/5396-fnUpdate-arrays.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/5508-xscroll-zero-content.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/6776-scrolling-table-grows.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/_getDataFunctions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/_setDataFunctions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/_zero_config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/aaSorting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/aaSortingFixed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/aoColumns.bSearchable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/aoColumns.bSortable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/aoColumns.bUseRendered.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/aoColumns.bVisible.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/aoColumns.bVisible2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/aoColumns.fnRender.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/aoColumns.iDataSort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/aoColumns.sClass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/aoColumns.sName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/aoColumns.sTitle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/aoColumns.sWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/aoSearchCols.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/asStripClasses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/bAutoWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/bFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/bInfiniteScroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/bInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/bJQueryUI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/bLengthChange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/bPaginate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/bProcessing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/bServerSide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/bSort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/bSortCellsTop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/bSortClasses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/fnCookieCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/fnCreatedCell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/fnCreatedRow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/fnDeleteRow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/fnDrawCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/fnFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/fnFooterCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/fnHeaderCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/fnInfoCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/fnInitComplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/fnRowCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/fnSetColumnVis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/fnSetColumnVis2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/html-autodetect-sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/iDisplayLength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/oLanguage.oPaginate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/oLanguage.sInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/oLanguage.sInfoEmpty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/oLanguage.sInfoPostFix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/oLanguage.sLengthMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/oLanguage.sProcessing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/oLanguage.sSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/oLanguage.sUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/oLanguage.sZeroRecords.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/oSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/sAjaxSource.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/sDom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/sPaginationType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/sScrollXY.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/1_dom/th_in_body.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/39-nested-null.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/6872-default-content-missing-props.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/8549--string-sorting-nonstrings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/_zero_config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/aaSorting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/aaSortingFixed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/aoColumns.bSearchable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/aoColumns.bSortable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/aoColumns.bUseRendered.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/aoColumns.bVisible.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/aoColumns.fnRender.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/aoColumns.iDataSort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/aoColumns.sClass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/aoColumns.sName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/aoColumns.sTitle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/aoColumns.sWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/aoSearchCols.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/asStripClasses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/bAutoWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/bFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/bInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/bLengthChange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/bPaginate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/bProcessing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/bServerSide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/bSort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/bSortClasses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/fnCreatedCell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/fnCreatedRow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/fnDrawCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/fnFooterCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/fnHeaderCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/fnInitComplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/fnRowCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/iDisplayLength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/js_data_mixed_types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/oLanguage.oPaginate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/oLanguage.sInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/oLanguage.sInfoEmpty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/oLanguage.sInfoPostFix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/oLanguage.sLengthMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/oLanguage.sProcessing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/oLanguage.sSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/oLanguage.sUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/oLanguage.sZeroRecords.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/oSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/sAjaxSource.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/sDom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/2_js/sPaginationType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/_zero_config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/aaSorting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/aaSortingFixed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/aoColumns.bSearchable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/aoColumns.bSortable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/aoColumns.bUseRendered.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/aoColumns.bVisible.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/aoColumns.fnRender.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/aoColumns.iDataSort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/aoColumns.sClass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/aoColumns.sName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/aoColumns.sTitle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/aoColumns.sWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/aoSearchCols.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/asStripClasses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/bAutoWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/bFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/bInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/bLengthChange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/bPaginate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/bProcessing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/bServerSide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/bSort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/bSortClasses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/fnCreatedCell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/fnCreatedRow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/fnDrawCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/fnHeaderCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/fnInitComplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/fnRowCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/fnServerData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/iDisplayLength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/oLanguage.oPaginate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/oLanguage.sInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/oLanguage.sInfoEmpty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/oLanguage.sInfoPostFix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/oLanguage.sLengthMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/oLanguage.sLoadingRecords.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/oLanguage.sProcessing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/oLanguage.sSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/oLanguage.sUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/oLanguage.sZeroRecords.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/oSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/sAjaxDataProp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/sAjaxDataProp2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/sAjaxSource.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/sDom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/3_ajax/sPaginationType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/-iDraw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/2440.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/2569.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/2600.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/_zero_config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/aaSorting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/aaSortingFixed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/aoColumns.bSearchable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/aoColumns.bSortable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/aoColumns.bUseRendered.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/aoColumns.bVisible.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/aoColumns.fnRender.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/aoColumns.sClass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/aoColumns.sName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/aoColumns.sTitle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/aoColumns.sWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/aoSearchCols.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/asStripClasses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/bAutoWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/bFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/bInfiniteScroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/bInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/bLengthChange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/bPaginate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/bProcessing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/bServerSide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/bSort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/bSortClasses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/fnCreatedCell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/fnCreatedRow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/fnDrawCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/fnHeaderCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/fnInitComplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/fnRowCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/iDeferLoading.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/iDisplayLength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/oLanguage.oPaginate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/oLanguage.sInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/oLanguage.sInfoEmpty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/oLanguage.sInfoPostFix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/oLanguage.sLengthMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/oLanguage.sProcessing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/oLanguage.sSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/oLanguage.sUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/oLanguage.sZeroRecords.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/oSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/sAjaxDataProp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/sAjaxSource.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/sDom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/4_server-side/sPaginationType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/_zero_config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/_zero_config_arrays_subobjects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/_zero_config_deep.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/_zero_config_mDataProp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/_zero_config_null_source.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/_zero_config_objects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/_zero_config_objects_subarrays.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/aaSorting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/aaSortingFixed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/aoColumns.bSearchable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/aoColumns.bSortable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/aoColumns.bUseRendered.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/aoColumns.bVisible.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/aoColumns.fnRender.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/aoColumns.iDataSort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/aoColumns.sClass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/aoColumns.sName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/aoColumns.sTitle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/aoColumns.sWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/aoSearchCols.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/asStripClasses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/bAutoWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/bFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/bInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/bLengthChange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/bPaginate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/bProcessing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/bServerSide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/bSort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/bSortClasses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/fnDrawCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/fnHeaderCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/fnInitComplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/fnRowCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/fnServerData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/iDisplayLength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/oLanguage.oPaginate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/oLanguage.sInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/oLanguage.sInfoEmpty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/oLanguage.sInfoPostFix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/oLanguage.sLengthMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/oLanguage.sProcessing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/oLanguage.sSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/oLanguage.sUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/oLanguage.sZeroRecords.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/oSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/sAjaxSource.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/sDom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/5_ajax_objects/sPaginationType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/_zero_config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/aaSorting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/aaSortingFixed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/aoColumns.bSearchable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/aoColumns.bSortable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/aoColumns.bUseRendered.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/aoColumns.bVisible.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/aoColumns.fnRender.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/aoColumns.iDataSort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/aoColumns.sClass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/aoColumns.sName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/aoColumns.sTitle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/aoColumns.sWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/aoSearchCols.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/asStripClasses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/bAutoWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/bFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/bInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/bLengthChange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/bPaginate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/bProcessing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/bServerSide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/bSort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/bSortClasses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/fnDrawCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/fnHeaderCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/fnInitComplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/fnRowCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/fnServerData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/iDisplayLength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/oLanguage.oPaginate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/oLanguage.sInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/oLanguage.sInfoEmpty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/oLanguage.sInfoPostFix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/oLanguage.sLengthMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/oLanguage.sProcessing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/oLanguage.sSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/oLanguage.sUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/oLanguage.sZeroRecords.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/oSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/sAjaxDataProp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/sAjaxDataProp2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/sAjaxSource.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/sDom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/tests_onhold/6_delayed_rendering/sPaginationType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datatables/unit_testing/unit_test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/easypiechart/examples/excanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/easypiechart/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/easypiechart/examples/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/easypiechart/jquery.easy-pie-chart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/easypiechart/jquery.easy-pie-chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/API.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/FAQ.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/NEWS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/PLUGINS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/ajax/data-eu-gdp-growth-1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/ajax/data-eu-gdp-growth-2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/ajax/data-eu-gdp-growth-3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/ajax/data-eu-gdp-growth-4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/ajax/data-eu-gdp-growth-5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/ajax/data-eu-gdp-growth.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/ajax/data-japan-gdp-growth.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/ajax/data-usa-gdp-growth.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/ajax/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/annotating/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-interacting/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-multiple/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/date.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/africa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/antarctica" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/asia" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/australasia" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/backward" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/etcetera" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/europe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/factory" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/iso3166.tab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/leapseconds" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/northamerica" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/pacificnew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/solar87" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/solar88" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/solar89" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/southamerica" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/systemv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/yearistype.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time-zones/tz/zone.tab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/axes-time/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/basic-canvas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/basic-options/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/basic-usage/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/canvas/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/categories/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/examples.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/image/hs-2004-27-a-large-web.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/image/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/interacting/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/navigate/arrow-down.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/navigate/arrow-left.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/navigate/arrow-right.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/navigate/arrow-up.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/navigate/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/percentiles/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/realtime/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/resize/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/selection/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/series-errorbars/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/series-pie/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/series-toggle/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/series-types/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/shared/jquery-ui/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/stacking/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/symbols/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/threshold/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/tracking/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/visitors/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/examples/zooming/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/excanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/excanvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/flot.jquery.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.colorhelpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.flot.canvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.flot.categories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.flot.crosshair.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.flot.errorbars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.flot.fillbetween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.flot.image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.flot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.flot.navigate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.flot.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.flot.resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.flot.selection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.flot.stack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.flot.symbol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.flot.threshold.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.flot.time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/flot/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/fullcalendar/fullcalendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/fullcalendar/fullcalendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/fullcalendar/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/fullcalendar/fullcalendar.print.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/fullcalendar/gcal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jGrowl/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jGrowl/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jGrowl/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jGrowl/examples/iphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jGrowl/examples/jgrowl-pool.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jGrowl/examples/jgrowl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jGrowl/examples/multiple-containers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jGrowl/examples/sideways.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jGrowl/examples/smoke.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jGrowl/jgrowl.jquery.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jGrowl/jquery.jgrowl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jGrowl/jquery.jgrowl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-1.9.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-1.9.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-ui-1.10.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/changelog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/ajaxSubmit-integration-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/captcha/captcha.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/captcha/fonts/Anorexia.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/captcha/image_req.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/captcha/images/button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/captcha/images/image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/captcha/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/captcha/newsession.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/captcha/process.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/captcha/rand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/captcha/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/css/cmxform.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/css/cmxformTemplate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/css/core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/css/screen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/custom-messages-data-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/custom-methods-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/dynamic-totals.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/errorcontainer-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/file_input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/images/bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/images/checked.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/images/cmxform-divider.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/images/cmxform-fieldset.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/images/unchecked.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/jquerymobile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/login/images/bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/login/images/header1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/login/images/page.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/login/images/required_star.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/login/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/login/screen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/backRequiredGray.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/back_green-fade.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/back_nav_blue.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/button-submit.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/left-nav-callout-long.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/login-sprite.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/logo_marketo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/sf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/step1-24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/step2-24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/step3-24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/tab-sprite.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/tab_green.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/time.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/toggle.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/images/warning.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/jquery.maskedinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/mktSignup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/step2.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/marketo/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/milk/bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/milk/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/milk/left_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/milk/milk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/milk/milk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/milk/right_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/multipart/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/multipart/js/jquery.maskedinput-1.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/multipart/js/ui.accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/multipart/js/ui.core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/multipart/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/radio-checkbox-select-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/tabs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/themerollered.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/tinymce/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/tinymce/themes/simple/editor_template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/tinymce/themes/simple/img/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/tinymce/themes/simple/langs/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/tinymce/themes/simple/skins/default/ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/demo/tinymce/tiny_mce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/dist/additional-methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/dist/jquery.validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/lib/jquery-1.6.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/lib/jquery-1.7.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/lib/jquery-1.8.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/lib/jquery-1.9.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/lib/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/lib/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/lib/jquery.mockjax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_kk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_my.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_pt_PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/messages_zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/methods_de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/methods_nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/localization/methods_pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/events.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/firebug/errorIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/firebug/firebug.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/firebug/firebug.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/firebug/firebug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/firebug/firebugx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/firebug/infoIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/firebug/warningIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/large.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/messages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/qunit/qunit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/qunit/qunit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/rules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/selects/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/tabs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/test/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery.knob.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/jquery.uniform.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/modernizr-2.6.2-respond-1.1.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/morris/morris.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/morris/morris.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/morris/morris.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/raphael-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/changelog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/jquery.tinymce.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/langs/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/advlist/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/anchor/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/autolink/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/autoresize/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/autosave/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/bbcode/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/charmap/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/code/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/compat3x/editable_selects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/compat3x/form_utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/compat3x/mctabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/compat3x/tiny_mce_popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/compat3x/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/directionality/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-cool.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-cry.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-embarassed.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-frown.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-innocent.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-kiss.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-laughing.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-sealed.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-smile.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-surprised.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-undecided.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-wink.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/img/smiley-yell.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/emoticons/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/example/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/example_dependency/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/fullpage/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/hr/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/image/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/importcss/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/layer/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/legacyoutput/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/link/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/lists/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/media/moxieplayer.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/media/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/noneditable/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/paste/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/preview/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/print/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/save/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/tabfocus/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/table/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/template/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/textcolor/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/visualblocks/css/visualblocks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/visualchars/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/plugins/wordcount/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/content.inline.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/fonts/icomoon-small.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/fonts/icomoon-small.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/fonts/icomoon-small.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/fonts/icomoon-small.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/fonts/icomoon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/fonts/icomoon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/fonts/icomoon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/fonts/icomoon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/fonts/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/img/anchor.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/img/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/img/object.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/img/trans.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/img/wline.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/skin.ie7.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/skins/lightgray/skin.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/themes/modern/theme.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/tinymce/js/tinymce/tinymce.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/uniform.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/wizard/jquery.bootstrap.wizard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/wizard/jquery.bootstrap.wizard.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/wysiwyg/bootstrap-wysihtml5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/wysiwyg/bootstrap-wysihtml5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Admin/vendors/wysiwyg/wysihtml5-0.3.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Cart.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/ChiTietSP.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/DSCongthucchebien.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/DangKi.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Hoadon-Abort.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Hoadon.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/LienHe.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Products.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Profile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Profile_BillManagement.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Profile_Password.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Thanhtoandonhang.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/TrangChu.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/CKFinder-2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mssql-jdbc-7.0.0.jre8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/congthucchebien.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index-Login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+    </list>
+    <ignored path=".idea/" />
+    <manually-removed-from-ignored>
+      <directory path="$PROJECT_DIR$/out/" />
+    </manually-removed-from-ignored>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1346310665">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="iml" value="2" />
+          <entry key="java" value="6" />
+          <entry key="jsp" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="6" />
+          <entry key="JSP" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="179" />
+          <entry key="txt" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="179" />
+          <entry key="PLAIN_TEXT" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.local" value="2" />
+          <entry key="git.branch.create.new" value="1" />
+          <entry key="git.branch.merge" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/banhaisan/controllers/quyen/SuaQuyenServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FINAL-PROJECT-NHOM4-V4.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/banhaisan/controllers/nguoidungthongthuong/SuaNguoiDungThongThuongServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="798">
+              <caret line="56" column="19" selection-start-line="55" selection-start-column="12" selection-end-line="56" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web/Admin/ChinhSuaQuyen.jsp" />
+        <option value="$PROJECT_DIR$/src/banhaisan/controllers/quyen/SuaQuyenServlet.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/web/Admin/vendors/flot/package.json" />
+      <path value="$PROJECT_DIR$/web/Admin/vendors/jquery-validation/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="430" />
+    <option name="y" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FINAL-PROJECT-NHOM4-V4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FINAL-PROJECT-NHOM4-V4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FINAL-PROJECT-NHOM4-V4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FINAL-PROJECT-NHOM4-V4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FINAL-PROJECT-NHOM4-V4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FINAL-PROJECT-NHOM4-V4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="banhaisan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FINAL-PROJECT-NHOM4-V4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FINAL-PROJECT-NHOM4-V4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="banhaisan" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FINAL-PROJECT-NHOM4-V4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FINAL-PROJECT-NHOM4-V4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="banhaisan" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="quyen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FINAL-PROJECT-NHOM4-V4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FINAL-PROJECT-NHOM4-V4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="banhaisan" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FINAL-PROJECT-NHOM4-V4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FINAL-PROJECT-NHOM4-V4" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FINAL-PROJECT-NHOM4-V4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FINAL-PROJECT-NHOM4-V4" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542337753257" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.12" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="FINAL-PROJECT-NHOM4-V4:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_12_FINAL-PROJECT-NHOM4-V4" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55002" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="FINAL-PROJECT-NHOM4-V4:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d7aa17b-25ce-41bd-a5d1-1fb488fe46cf" name="Default Changelist" comment="" />
+      <created>1542300192312</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542300192312</updated>
+      <workItem from="1542300193500" duration="851000" />
+      <workItem from="1542333844301" duration="3296000" />
+      <workItem from="1542337568115" duration="232000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1542301322467</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542301322467</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit">
+      <created>1542336434323</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542336434323</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4147000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992908" visible="true" weight="0.25637585" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" sideWeight="0.50070924" side_tool="true" weight="0.25302014" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/FINAL-PROJECT-NHOM4-V4.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Admin/ChinhSuaQuyen.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2318">
+          <caret line="122" column="85" selection-start-line="122" selection-start-column="85" selection-end-line="122" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Admin/QlyQuyen.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="136" column="69" selection-start-line="136" selection-start-column="49" selection-end-line="136" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/banhaisan/controllers/quyen/QuyenServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/banhaisan/controllers/quyen/ThemQuyenServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/banhaisan/controllers/nguoidungthongthuong/SuaNguoiDungThongThuongServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="56" column="19" selection-start-line="55" selection-start-column="12" selection-end-line="56" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/banhaisan/controllers/quyen/SuaQuyenServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
