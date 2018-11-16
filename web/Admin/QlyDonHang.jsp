@@ -1,5 +1,6 @@
-<!-- <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%> -->
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -48,7 +49,7 @@
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle">Quản lý Người dùng <b class="caret"></b>
                             </a>
-                            <ul class="dropdown-menu" id="menu1">
+                            <ul class="dropdown-menu" id="menu">
                                 <li>
                                     <a href="QlyNguoiDungThongThuong.jsp">Người dùng thông thường</a>
                                 </li>
@@ -63,31 +64,21 @@
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu" id="menu1">
-                                <li>
-                                    <a href="QLySanPham.jsp">Tôm</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Cua</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Cá</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Mực</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Ngao-Sò-Ốc</a>
-                                </li>
+                                <c:forEach var="danhMuc" items="${requestScope.danhMucs}">
+                                    <li>
+                                        <a href="QLSanPham?idDM=${danhMuc.maDanhmuc}">${danhMuc.tenDanhmuc}</a>
+                                    </li>
+                                </c:forEach>
                             </ul>
                         </li>
                         <li>
                             <a href="QlyBaiViet.jsp">Quản lý Bài Viết</a>
                         </li>
                         <li>
-                            <a href="QLyDanhMuc.jsp">Quản lý Danh mục</a>
+                            <a href="/Admin/QLDanhMuc">Quản lý Danh mục</a>
                         </li>
                         <li>
-                            <a href="QlyDonHang.jsp">Quản lý Đơn hàng</a>
+                            <a href="/Admin/QLDonHang">Quản lý Đơn hàng</a>
                         </li>
                         <li>
                             <a href="QlyQuyen.jsp">Quản lý quyền</a>
@@ -127,37 +118,23 @@
                                     <th width="75">Chi tiết</th>
                                     <th width="85">Xóa</th>
                                 </tr>
+                                <c:forEach var="donHang" items="${requestScope.donHangs}">
                                 <tr>
-                                    <td>Đã giao</td>
-                                    <td>1</td>
-                                    <td>nd1</td>
-                                    <td>100.000</td>
-                                    <td>Cà mau</td>
-                                    <td>Trả trước</td>
-                                    <td>1/11/2018</td>
+                                    <td>${donHang.tinhTrang}</td>
+                                    <td>${donHang.maDonHang}</td>
+                                    <td>${donHang.maNguoiDung}</td>
+                                    <td>${donHang.tongTien}</td>
+                                    <td>${donHang.diaChiGiaoHang}</td>
+                                    <td>${donHang.hinhThucThanhToan}</td>
+                                    <td>${donHang.ngayDatHang}</td>
                                     <td>
-                                        <a href="XemDonHang.jsp" class="btn"><i class="icon-eye-open"></i> View</a>
+                                        <a href="/Admin/XemCTDonHang?idDH=${donHang.maDonHang}" class="btn"><i class="icon-eye-open"></i> View</a>
                                     </td>
                                     <td>
-                                        <button class="btn btn-danger"><i class="icon-remove icon-white"></i> Delete</button>
+                                        <a href="/Admin/XoaDonHang?idDH=${donHang.maDonHang}" onclick="return confirm('Are you sure?')" class="btn btn-danger"><i class="icon-remove icon-white"></i> Delete</a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>Đang tiến hành</td>
-                                    <td>2</td>
-                                    <td>nd2</td>
-                                    <td>150.000</td>
-                                    <td>Quãng Ngãi</td>
-                                    <td>Thanh toán khi nhận hàng</td>
-                                    <td>1/11/2018</td>
-                                    <td>
-                                        <a href="XemDonHang.jsp" class="btn"><i class="icon-eye-open"></i> View</a>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-danger"><i class="icon-remove icon-white"></i> Delete</button>
-                                    </td>
-                                </tr>
-
+                                </c:forEach>
 
                             </table>
                             <div class="dataTables_paginate paging_bootstrap pagination" style="text-align:center">

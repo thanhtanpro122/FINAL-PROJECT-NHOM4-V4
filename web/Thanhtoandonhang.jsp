@@ -692,31 +692,6 @@
                                 </table>
                             </div>
 
-                            <div class="order-summary-section order-summary-section-discount"
-                                data-order-summary-section="discount">
-                                <form id="form_discount_add" accept-charset="UTF-8" method="post">
-                                    <input name="utf8" type="hidden" value="✓">
-                                    <div class="fieldset">
-                                        <div class="field   field-show-floating-label">
-                                            <div class="field-input-btn-wrapper">
-                                                <div class="field-input-wrapper">
-                                                    <label class="field-label" for="discount.code">Mã giảm giá</label>
-                                                    <input placeholder="Mã giảm giá" class="field-input"
-                                                        data-discount-field="true" autocomplete="off" autocapitalize="off"
-                                                        spellcheck="false" size="30" type="text" id="discount.code"
-                                                        name="discount.code" value="">
-                                                </div>
-                                                <button type="submit" class="field-input-btn btn btn-default">
-                                                    <span class="btn-content">Sử dụng</span>
-                                                    <i class="btn-spinner icon icon-button-spinner"></i>
-                                                </button>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
                             <div class="order-summary-section order-summary-section-total-lines"
                                 data-order-summary-section="payment-lines">
                                 <table class="total-line-table">
@@ -775,17 +750,13 @@
                                     <h2 class="section-title">Thông tin giao hàng</h2>
                                 </div>
                                 <div class="section-content section-customer-information no-mb">
-                                    <p class="section-content-text">
-                                        Bạn đã có tài khoản?
-                                        <a data-toggle="modal" href="#LoginModal">Đăng nhập</a>
-                                    </p>
                                     <div class="fieldset">
                                         <div class="field    field-show-floating-label">
                                             <div class="field-input-wrapper">
                                                 <label class="field-label" for="billing_address_full_name">Họ và tên</label>
                                                 <input placeholder="Họ và tên" autocapitalize="off" spellcheck="false"
                                                     class="field-input" size="30" type="text" id="billing_address_full_name"
-                                                    name="billing_address[full_name]" value="">
+                                                    name="billing_address[full_name]" value="Jaxkie Phạm" disabled>
                                             </div>
                                         </div>
                                         <div class="field  field-two-thirds   field-show-floating-label">
@@ -793,7 +764,7 @@
                                                 <label class="field-label" for="checkout_user_email">Email</label>
                                                 <input placeholder="Email" autocapitalize="off" spellcheck="false"
                                                     class="field-input" size="30" type="email" id="checkout_user_email"
-                                                    name="checkout_user[email]" value="">
+                                                    name="checkout_user[email]" value="16110291@student.hcmute.edu.vn" disabled>
                                             </div>
                                         </div>
                                         <div class="field field-required field-third   field-show-floating-label">
@@ -801,7 +772,7 @@
                                                 <label class="field-label" for="billing_address_phone">Số điện thoại</label>
                                                 <input placeholder="Số điện thoại" autocapitalize="off" spellcheck="false"
                                                     class="field-input" size="30" maxlength="11" type="tel" id="billing_address_phone"
-                                                    name="billing_address[phone]" value="">
+                                                    name="billing_address[phone]" value="0586060734" disabled>
                                             </div>
                                         </div>
                                         <div class="field field-required   field-show-floating-label">

@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public abstract class ConnectDatabase {
-    private final String connectionString = "jdbc:sqlserver://localhost:1433;database=WebHaiSan;username=sa;password=12345";
+    private final String connectionString = "jdbc:sqlserver://localhost:1433;database=QLHAISAN;username=sa;password=12345";
     protected Connection connection = null;
 
     public void openConnection() throws SQLException, ClassNotFoundException {
