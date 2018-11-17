@@ -1,8 +1,11 @@
 package banhaisan.controllers.quyen;
 
+import banhaisan.models.businessmodels.NghiepVuService;
 import banhaisan.models.businessmodels.QuyenService;
 import banhaisan.models.datamodels.Quyen;
+import banhaisan.models.viewmodels.QlyQuyen_ShowTable;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,6 +22,7 @@ public class SuaQuyenServlet extends HttpServlet {
         Quyen quyen= new Quyen();
         quyen.setMaQuyen(request.getParameter("txt-ma-quyen"));
         quyen.setTenQuyen(request.getParameter("txt-ten-quyen"));
+        quyen.setMaNghiepVu(Integer.parseInt(request.getParameter("nghiep-vu")));
 
         QuyenService service= new QuyenService();
         try {
@@ -26,16 +30,39 @@ public class SuaQuyenServlet extends HttpServlet {
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-        response.sendRedirect("/Admin/ChinhSuaQuyen");
+        response.sendRedirect("/Admin/QlyQuyen");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String idQuyen= request.getParameter("id");
-        if(idQuyen==null){
+        if(idQuyen == null){
             response.setStatus(400);
             return;
         }
         QuyenService service= new QuyenService();
+        Quyen quyen= null;
+        try {
+            quyen = service.get(idQuyen);
+
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        if(quyen == null){
+            response.setStatus(400);
+            return;
+        }
+        request.setAttribute("quyen", quyen);
+
+        NghiepVuService nghiepVuService = new NghiepVuService();
+        try {
+            request.setAttribute("nghiepVus", nghiepVuService.getData());
+            request.setAttribute("nghiepvu", nghiepVuService.get(quyen.getMaNghiepVu()));
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Admin/ChinhSuaQuyen.jsp");
+        dispatcher.forward(request, response);
 
     }
 }

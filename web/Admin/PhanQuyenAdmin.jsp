@@ -1,5 +1,6 @@
-<!-- <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%> -->
+ <%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -107,54 +108,29 @@
                     <div class="block-content collapse in">
                         <div class="span12">
                             <!-- BEGIN FORM-->
-                            <form action="#" id="form_sample_1" class="form-horizontal" style="width:70%;margin:0 auto;">
-                                <h2 style="text-align: center">Phân quyền cho quản trị viên: Nguyễn Thanh Tân</h2>
+                            <form action="/Admin/PhanQuyen" method="post" class="form-horizontal" style="width:70%;margin:0 auto">
+                                <input type="hidden" value="${requestScope.admin.maNguoiDung}" name="txtMa">
+                                <h2 style="text-align: center">Phân quyền cho quản trị viên : ${admin.hoTen} </h2>
                                 <p style="text-align: center">Chọn các quyền cần gán cho danh sách dưới đây</p>
-                                <div class="control-group">
+                                <div class="control-group" >
                                     <label class="control-label">Chọn nghiệp vụ</label>
                                     <div class="controls">
-                                        <select class="span6 m-wrap" name="category" style="width:500px !important;">
-                                            <option value="">chọn nghiệp vụ</option>
-                                            <option value="Category 1">Quản lí người dùng thông thường</option>
-                                            <option value="Category 1">Quản lí admin</option>
-                                            <option value="Category 1">Quản lí sản phẩm</option>
-                                            <option value="Category 1">Quản lí bài viết</option>
-                                            <option value="Category 1">Quản lí danh mục</option>
-                                            <option value="Category 1">Quản lí đơn hàng</option>
-                                            <option value="Category 1">Quản lí quyền</option>
+                                        <select class="span6 m-wrap" name="category" id="nghiep-vu" style="width:500px !important;">
+                                            <option value="-1" selected>chọn nghiệp vụ</option>
+                                            <c:forEach var="nghiepVu" items="${nghiepvus}">
+                                                <option value="${nghiepVu.maNghiepVu}">${nghiepVu.tenNghiepVu}</option>
+                                            </c:forEach>
                                         </select>
                                     </div>
                                 </div>
                                 <h4 style="text-align: center">Danh sách quyền hạn</h4>
-                                <div class="control-group" style="margin-left: 43%;">
-                                    <label class="uniform">
-                                        <br>
-                                        <input class="uniform_on" type="checkbox" id="optionsCheckbox1" value="option1"
-                                            checked>Xem
-                                        thông tin
-                                    </label>
-                                    <label class="uniform">
-                                        <input class="uniform_on" type="checkbox" id="optionsCheckbox2" value="option1"
-                                            checked>Thêm
-                                        mới
-                                    </label>
-                                    <label class="uniform">
-                                        <input class="uniform_on" type="checkbox" id="optionsCheckbox3" value="option1"
-                                            checked>Chỉnh
-                                        sửa
-                                    </label>
-                                    <label class="uniform">
-                                        <input class="uniform_on" type="checkbox" id="optionsCheckbox4" value="option1">Xóa
-                                        <br>
-                                    </label>
-                                    <label class="uniform">
-                                        <input class="uniform_on" type="checkbox" id="optionsCheckbox5" value="option1">Phân
-                                        quyền
-                                    </label>
+                                <div class="control-group" id="quyens" style="margin-left: 36%;">
                                 </div>
                                 <div style="text-align: center">
-                                    <button type="button" class="btn btn-success btn-large">Quay về trang chủ</button>
+                                    <input id="btn-them" type="submit" class="btn btn-primary" value="Hoàn thành" />
+                                    <button type="button" class="btn">Hủy bỏ</button>
                                 </div>
+
                             </form>
 
                             <!-- END FORM-->
@@ -228,6 +204,27 @@
                 $('#rootwizard').find("a[href*='tab1']").trigger('click');
             });
         });
+    </script>
+    <script>
+        $("#nghiep-vu").change(() => {
+            let idNghiepVu = $("#nghiep-vu").val();
+        if (idNghiepVu === "-1") {
+            return;
+        }
+        $.post("/Admin/PhanQuyenAdmin?idNghiepVu=" + idNghiepVu + "&maNd=${admin.maNguoiDung}", content => $("#quyens").html(content));
+        });
+        function xuLyCheck(obj) {
+            let child = $(obj).children();
+            let maQuyen = $(child).val();
+            let check = 0;
+            if ($(obj).hasClass("checked")) {
+                $(obj).removeClass("checked");
+                check = 0;
+            } else {
+                $(obj).addClass("checked");
+                check = 1;
+            }
+        }
     </script>
 </body>
 

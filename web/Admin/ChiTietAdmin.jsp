@@ -179,7 +179,7 @@
                                         <select class="span6 m-wrap" name="category" id="nghiep-vu" style="width:500px !important;">
                                             <option value="-1" selected>chọn nghiệp vụ</option>
                                             <c:forEach var="nghiepVu" items="${nghiepvus}">
-                                                <option value="${nghiepVu.idNghiepVu}">${nghiepVu.tenNghiepVu}</option>
+                                                <option value="${nghiepVu.maNghiepVu}">${nghiepVu.tenNghiepVu}</option>
                                             </c:forEach>
                                         </select>
                                     </div>

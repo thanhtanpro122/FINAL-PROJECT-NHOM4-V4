@@ -1,19 +1,18 @@
-package banhaisan.models.datamodels;
+package banhaisan.models.viewmodels;
 
-public class Quyen {
+public class QlyQuyen_ShowTable {
     private String maQuyen;
     private String tenQuyen;
-    private int maNghiepVu;
+    private String tenNghiepVu;
 
-    public Quyen() {
+    public QlyQuyen_ShowTable() {
     }
 
-    public Quyen(String maQuyen, String tenQuyen, int maNghiepVu) {
+    public QlyQuyen_ShowTable(String maQuyen, String tenQuyen, String tenNghiepVu) {
         this.maQuyen = maQuyen;
         this.tenQuyen = tenQuyen;
-        this.maNghiepVu = maNghiepVu;
+        this.tenNghiepVu = tenNghiepVu;
     }
-
 
     public String getMaQuyen() {
         return maQuyen;
@@ -31,11 +30,11 @@ public class Quyen {
         this.tenQuyen = tenQuyen;
     }
 
-    public int getMaNghiepVu() {
-        return maNghiepVu;
+    public String getTenNghiepVu() {
+        return tenNghiepVu;
     }
 
-    public void setMaNghiepVu(int maNghiepVu) {
-        this.maNghiepVu = maNghiepVu;
+    public void setTenNghiepVu(String tenNghiepVu) {
+        this.tenNghiepVu = tenNghiepVu;
     }
 }

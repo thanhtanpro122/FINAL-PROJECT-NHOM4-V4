@@ -45,7 +45,7 @@ public class SuaNguoiDungAdminServlet extends HttpServlet {
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-        response.sendRedirect("/Admin/ChinhSuaAdmin");
+        response.sendRedirect("/Admin/NguoiDungAdmin");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

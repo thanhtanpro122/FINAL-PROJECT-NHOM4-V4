@@ -48,7 +48,7 @@ public class ThemAdminServlet extends HttpServlet {
             error.setAttribute("error", e.toString());
             e.printStackTrace();
         }
-        response.sendRedirect("/Admin/TMAdmin");
+        response.sendRedirect("/Admin/NguoiDungAdmin");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

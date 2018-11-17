@@ -1,25 +1,25 @@
 package banhaisan.models.viewmodels;
 
 public class QuyenVM {
-    private String idQuyen;
+    private String maQuyen;
     private String tenQuyen;
     private boolean choPhep;
 
     public QuyenVM() {
     }
 
-    public QuyenVM(String idQuyen, String tenQuyen, boolean choPhep) {
-        this.idQuyen = idQuyen;
+    public QuyenVM(String maQuyen, String tenQuyen, boolean choPhep) {
+        this.maQuyen = maQuyen;
         this.tenQuyen = tenQuyen;
         this.choPhep = choPhep;
     }
 
-    public String getIdQuyen() {
-        return idQuyen;
+    public String getMaQuyen() {
+        return maQuyen;
     }
 
-    public void setIdQuyen(String idQuyen) {
-        this.idQuyen = idQuyen;
+    public void setMaQuyen(String maQuyen) {
+        this.maQuyen = maQuyen;
     }
 
     public String getTenQuyen() {

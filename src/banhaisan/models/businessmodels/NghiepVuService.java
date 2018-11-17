@@ -2,6 +2,7 @@ package banhaisan.models.businessmodels;
 
 import banhaisan.models.datamodels.NghiepVu;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -17,9 +18,11 @@ public class NghiepVuService extends ConnectDatabase implements Business<NghiepV
         ResultSet res = statement.executeQuery(sql);
         while (res.next()) {
             NghiepVu nghiepVu = new NghiepVu();
-            nghiepVu.setIdNghiepVu(res.getInt(1));
+            nghiepVu.setMaNghiepVu(res.getInt(1));
             nghiepVu.setTenNghiepVu(res.getString(2));
             nghiepVu.setMoTa(res.getString(3));
+
+
             nghiepVus.add(nghiepVu);
         }
         closeConnection();
@@ -28,7 +31,28 @@ public class NghiepVuService extends ConnectDatabase implements Business<NghiepV
 
     @Override
     public NghiepVu get(Object... keys) throws SQLException, ClassNotFoundException {
-        return null;
+        if(keys.length<=0){
+            return null;
+        }
+        openConnection();
+
+        String sql= "EXEC LayMotNghiepVu ?";
+        PreparedStatement statement= connection.prepareStatement(sql);
+        statement.setEscapeProcessing(true);
+        statement.setQueryTimeout(90);
+        statement.setInt(1, Integer.parseInt(keys[0].toString()));
+
+        ResultSet resultSet= statement.executeQuery();
+        NghiepVu nv=null;
+
+        while (resultSet.next()){
+            nv = new NghiepVu();
+            nv.setMaNghiepVu(resultSet.getInt(1));
+            nv.setTenNghiepVu(resultSet.getString(2));
+            nv.setMoTa(resultSet.getString(3));
+        }
+        closeConnection();
+        return nv;
     }
 
     @Override

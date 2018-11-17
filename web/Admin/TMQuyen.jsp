@@ -1,5 +1,6 @@
-<!-- <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%> -->
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -123,6 +124,17 @@
                                         <input id="txt-ten-quyen" name="txt-ten-quyen" type="text" class="span6 m-wrap"
                                             style="width:500px !important;"/>
                                         <br><small class="text-danger" id="validate-txt-ten-quyen"></small>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Chọn nghiệp vụ</label>
+                                    <div class="controls">
+                                        <select class="span6 m-wrap" name="nghiep-vu" id="nghiep-vu" style="width:500px !important;">
+                                            <option value="-1" selected>chọn nghiệp vụ</option>
+                                            <c:forEach var="nghiepVu" items="${nghiepvus}">
+                                                <option value="${nghiepVu.maNghiepVu}">${nghiepVu.tenNghiepVu}</option>
+                                            </c:forEach>
+                                        </select>
                                     </div>
                                 </div>
                                 <div style="text-align:center;">

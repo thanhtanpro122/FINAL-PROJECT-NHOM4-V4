@@ -149,7 +149,7 @@
                                                     Delete</a>
                                             </td>
                                             <td>
-                                                <a href="/Admin/PhanQuyen?id=${nguoiDung.maNguoiDung}" class="btn"><i class="icon-check"></i>Quyền</a>
+                                                <a href="/Admin/PhanQuyenAdmin?id=${nguoiDung.maNguoiDung}" class="btn"><i class="icon-check"></i>Quyền</a>
                                             </td>
                                         </tr>
                                     </c:forEach>

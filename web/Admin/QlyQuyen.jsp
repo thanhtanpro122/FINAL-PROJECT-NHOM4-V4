@@ -111,7 +111,7 @@
                         <div class="table-toolbar">
                             <div>
                                 <div style="float:left;">
-                                    <a href="TMQuyen.jsp">
+                                    <a href="/Admin/TMQuyen">
                                         <button class="btn btn-success">Thêm mới <i class="icon-plus icon-white"></i>
                                         </button>
                                     </a>
@@ -124,6 +124,7 @@
                             <tr>
                                 <th >Mã quyền</th>
                                 <th>Tên quyền</th>
+                                <th>Tên nghiệp vụ</th>
                                 <th width="70">Chỉnh sửa</th>
                                 <th width="85">Xóa</th>
                             </tr>
@@ -133,6 +134,7 @@
                                 <tr class="odd gradeX">
                                     <td>${quyen.maQuyen}</td>
                                     <td>${quyen.tenQuyen} </td>
+                                    <td>${quyen.tenNghiepVu} </td>
                                     <td>
                                         <a href="/Admin/ChinhSuaQuyen?id=${quyen.maQuyen} " class="btn btn-primary"><i
                                                 class="icon-pencil icon-white"></i>

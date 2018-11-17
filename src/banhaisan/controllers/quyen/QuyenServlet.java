@@ -2,6 +2,7 @@ package banhaisan.controllers.quyen;
 
 import banhaisan.models.businessmodels.QuyenService;
 import banhaisan.models.datamodels.Quyen;
+import banhaisan.models.viewmodels.QlyQuyen_ShowTable;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -18,8 +19,8 @@ public class QuyenServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
             QuyenService service = new QuyenService();
-            ArrayList<Quyen> quyens = null;
-            quyens = service.getData();
+            ArrayList<QlyQuyen_ShowTable> quyens = null;
+            quyens = service.getDataTable();
             request.setAttribute("quyens", quyens);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();

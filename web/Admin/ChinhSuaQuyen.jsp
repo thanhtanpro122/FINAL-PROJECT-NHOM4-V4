@@ -1,5 +1,6 @@
-<!-- <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%> -->
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -108,12 +109,12 @@
                     <div class="block-content collapse in">
                         <div class="span12">
                             <!-- BEGIN FORM-->
-                            <form action="#" id="form_sample_1" class="form-horizontal" style="width:70%;margin:0 auto;">
+                            <form action="/Admin/ChinhSuaQuyen" id="form_sample_1" class="form-horizontal" style="width:70%;margin:0 auto;" method="post">
                                 <div class="control-group">
                                     <label class="control-label">Mã quyền<span class="required">*</span></label>
                                     <div class="controls">
                                         <input id="txt-ma-quyen" type="text" name="txt-ma-quyen" data-required="1" class="span6 m-wrap"
-                                            style="width:500px !important;" value="q1" />
+                                            style="width:500px !important;" value="${quyen.maQuyen}" />
                                         <br><small class="text-danger" id="validate-txt-ma-quyen"></small>
                                     </div>
                                 </div>
@@ -121,8 +122,19 @@
                                     <label class="control-label">Tên quyền<span class="required">*</span></label>
                                     <div class="controls">
                                         <input id="txt-ten-quyen" name="txt-ten-quyen" type="text" class="span6 m-wrap"
-                                            style="width:500px !important;" value="Thêm"/>
+                                            style="width:500px !important;" value="${quyen.tenQuyen} "/>
                                         <br><small class="text-danger" id="validate-txt-ten-quyen"></small>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Chọn nghiệp vụ</label>
+                                    <div class="controls">
+                                        <select class="span6 m-wrap" name="nghiep-vu" id="nghiep-vu" style="width:500px !important;">
+                                            <option value="-1" selected>chọn nghiệp vụ</option>
+                                            <c:forEach var="nghiepVu" items="${nghiepVus}">
+                                                <option value="${nghiepVu.maNghiepVu}" <c:if test="${nghiepVu.maNghiepVu == requestScope.nghiepvu.maNghiepVu}">selected</c:if>>${nghiepVu.tenNghiepVu}</option>
+                                            </c:forEach>
+                                        </select>
                                     </div>
                                 </div>
                                 <div style="text-align:center;">
