@@ -1,7 +1,6 @@
 package banhaisan.controllers.quyen;
 
-import banhaisan.models.businessmodels.NghiepVuService;
-import banhaisan.models.businessmodels.QuyenService;
+import banhaisan.models.datahandle.QuyenService;
 import banhaisan.models.datamodels.Quyen;
 
 import javax.servlet.RequestDispatcher;
@@ -21,8 +20,6 @@ public class ThemQuyenServlet extends HttpServlet {
         Quyen quyens= new Quyen();
         quyens.setMaQuyen(request.getParameter("txt-ma-quyen"));
         quyens.setTenQuyen(request.getParameter("txt-ten-quyen"));
-        quyens.setMaNghiepVu(Integer.parseInt(request.getParameter("nghiep-vu")));
-
 
         QuyenService quyenservice= new QuyenService();
         Quyen quyen= null;
@@ -31,17 +28,10 @@ public class ThemQuyenServlet extends HttpServlet {
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-        response.sendRedirect("/Admin/QlyQuyen");
+        response.sendRedirect("/Admin/TMQuyen");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        NghiepVuService nghiepVuService = new NghiepVuService();
-        try {
-            request.setAttribute("nghiepvus", nghiepVuService.getData());
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Admin/TMQuyen.jsp");
         dispatcher.forward(request, response);
     }

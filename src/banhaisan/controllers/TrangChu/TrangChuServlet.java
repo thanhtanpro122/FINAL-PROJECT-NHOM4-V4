@@ -1,7 +1,7 @@
 package banhaisan.controllers.TrangChu;
 
-import banhaisan.models.businessmodels.DanhMucService;
-import banhaisan.models.businessmodels.SanPhamService;
+import banhaisan.models.datahandle.DanhMucService;
+import banhaisan.models.datahandle.SanPhamService;
 import banhaisan.models.datamodels.DanhMuc;
 import banhaisan.models.datamodels.SanPham;
 

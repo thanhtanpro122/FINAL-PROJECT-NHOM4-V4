@@ -1,4 +1,4 @@
-package banhaisan.models.businessmodels;
+package banhaisan.models.datahandle;
 
 import banhaisan.models.datamodels.PhanQuyen;
 import banhaisan.models.datamodels.Quyen;

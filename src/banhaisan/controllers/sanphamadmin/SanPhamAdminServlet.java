@@ -1,7 +1,7 @@
 package banhaisan.controllers.sanphamadmin;
 
-import banhaisan.models.businessmodels.DanhMucService;
-import banhaisan.models.businessmodels.SanPhamService;
+import banhaisan.models.datahandle.DanhMucService;
+import banhaisan.models.datahandle.SanPhamService;
 import banhaisan.models.datamodels.DanhMuc;
 import banhaisan.models.datamodels.SanPham;
 
@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.awt.image.AreaAveragingScaleFilter;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;

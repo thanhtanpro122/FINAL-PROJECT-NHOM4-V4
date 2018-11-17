@@ -1,6 +1,6 @@
 package banhaisan.controllers.danhmucadmin;
 
-import banhaisan.models.businessmodels.DanhMucService;
+import banhaisan.models.datahandle.DanhMucService;
 import banhaisan.models.datamodels.DanhMuc;
 
 import javax.servlet.RequestDispatcher;

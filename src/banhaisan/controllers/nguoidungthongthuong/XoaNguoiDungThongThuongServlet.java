@@ -1,9 +1,8 @@
 package banhaisan.controllers.nguoidungthongthuong;
 
-import banhaisan.models.businessmodels.NguoiDungThongThuongService;
+import banhaisan.models.datahandle.NguoiDungThongThuongService;
 import banhaisan.models.datamodels.NguoiDung;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

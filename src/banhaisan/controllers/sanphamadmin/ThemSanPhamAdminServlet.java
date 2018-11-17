@@ -1,10 +1,9 @@
 package banhaisan.controllers.sanphamadmin;
 
-import banhaisan.models.businessmodels.DanhMucService;
-import banhaisan.models.businessmodels.SanPhamService;
+import banhaisan.models.datahandle.DanhMucService;
+import banhaisan.models.datahandle.SanPhamService;
 import banhaisan.models.datamodels.DanhMuc;
 import banhaisan.models.datamodels.SanPham;
-import javafx.scene.shape.Path;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -15,20 +14,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.sql.SQLException;
 import java.util.ArrayList;
-@MultipartConfig(maxFileSize = 169999999)
 @WebServlet(name = "ThemSanPhamAdminServlet", urlPatterns = {"/Admin/THMSanPham"})
 public class ThemSanPhamAdminServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=UTF-8");
-        Part filePart = request.getPart("imageInput");
-        InputStream inputStream = null;
-        if(filePart !=null)
-        {
-            long fileSize = filePart.getSize();
-            String fileContent = filePart.getContentType();
-            inputStream = filePart.getInputStream();
-        }
         try {
             SanPham sanPham = new SanPham();
             sanPham.setMaSP(request.getParameter("txtMaSP"));

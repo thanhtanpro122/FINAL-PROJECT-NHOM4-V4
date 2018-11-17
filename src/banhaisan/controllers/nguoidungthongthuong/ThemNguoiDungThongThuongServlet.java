@@ -1,6 +1,6 @@
 package banhaisan.controllers.nguoidungthongthuong;
 
-import banhaisan.models.businessmodels.NguoiDungThongThuongService;
+import banhaisan.models.datahandle.NguoiDungThongThuongService;
 import banhaisan.models.datamodels.NguoiDung;
 
 import javax.servlet.RequestDispatcher;
@@ -47,9 +47,7 @@ public class ThemNguoiDungThongThuongServlet extends HttpServlet {
             error.setAttribute("error", e.toString());
             e.printStackTrace();
         }
-        response.sendRedirect("/Admin/NguoiDungThongThuong");
-
-
+        response.sendRedirect("/Admin/TMNguoiDung");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

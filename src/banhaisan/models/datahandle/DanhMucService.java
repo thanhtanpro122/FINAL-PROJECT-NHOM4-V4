@@ -1,13 +1,11 @@
-package banhaisan.models.businessmodels;
+package banhaisan.models.datahandle;
 
 import banhaisan.models.datamodels.DanhMuc;
-import com.sun.rowset.internal.Row;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.ResourceBundle;
 
 public class DanhMucService extends ConnectDatabase implements Business<DanhMuc>{
     private static final DanhMucService instance = new DanhMucService();

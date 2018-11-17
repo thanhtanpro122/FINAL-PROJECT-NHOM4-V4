@@ -1,20 +1,20 @@
-package banhaisan.models.businessmodels;
+package banhaisan.models.datahandle;
 
 import banhaisan.models.datamodels.NguoiDung;
+import banhaisan.models.viewmodels.QuyenVM;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class NguoiDungThongThuongService extends ConnectDatabase implements Business<NguoiDung> {
-
+public class NguoiDungAdminService extends ConnectDatabase implements Business<NguoiDung> {
     @Override
     public ArrayList<NguoiDung> getData() throws SQLException, ClassNotFoundException {
         ArrayList<NguoiDung> nguoiDungs = new ArrayList<>();
         openConnection();
 
-        String sql = "EXEC LayNguoiDungThongThuong";
+        String sql = "EXEC LayNguoiDungAdmin";
         PreparedStatement statement = connection.prepareStatement(sql);
         statement.setEscapeProcessing(true);
         statement.setQueryTimeout(90);
@@ -46,7 +46,7 @@ public class NguoiDungThongThuongService extends ConnectDatabase implements Busi
         }
         openConnection();
 
-        String sql= "EXEC LayMotNguoiDungThongThuong ?";
+        String sql= "EXEC LayMotNguoiDungAdmin ?";
         PreparedStatement statement= connection.prepareStatement(sql);
         statement.setEscapeProcessing(true);
         statement.setQueryTimeout(90);
@@ -69,7 +69,6 @@ public class NguoiDungThongThuongService extends ConnectDatabase implements Busi
         }
         closeConnection();
         return nguoiDung;
-
     }
 
     @Override
@@ -79,7 +78,7 @@ public class NguoiDungThongThuongService extends ConnectDatabase implements Busi
         }
         openConnection();
 
-        String sql = "EXEC ThemNguoiDungThongThuong ?,?,?,?,?,?,?";
+        String sql = "EXEC ThemNguoiDungAdmin ?,?,?,?,?,?,?";
         PreparedStatement statement = connection.prepareStatement(sql);
         statement.setEscapeProcessing(true);
         statement.setQueryTimeout(90);
@@ -97,21 +96,8 @@ public class NguoiDungThongThuongService extends ConnectDatabase implements Busi
     }
 
     @Override
-    public int delete(NguoiDung model) throws SQLException, ClassNotFoundException {
-        if (model == null) {
-            return 0;
-        }
-        openConnection();
-
-        String sql = "EXEC XoaNguoiDungThongThuong ?";
-        PreparedStatement statement = connection.prepareStatement(sql);
-        statement.setEscapeProcessing(true);
-        statement.setQueryTimeout(90);
-        statement.setString(1, model.getMaNguoiDung());
-
-        int rowAffected = statement.executeUpdate();
-        closeConnection();
-        return rowAffected;
+    public int delete(NguoiDung model) {
+        return 0;
     }
 
     @Override
@@ -121,7 +107,7 @@ public class NguoiDungThongThuongService extends ConnectDatabase implements Busi
         }
         openConnection();
 
-        String sql = "EXEC SuaNguoiDungThongThuong  ?,?,?,?,?,?,?,?";
+        String sql = "EXEC SuaNguoiDungAdmin  ?,?,?,?,?,?,?,?";
         PreparedStatement statement = connection.prepareStatement(sql);
         statement.setEscapeProcessing(true);
         statement.setQueryTimeout(90);
@@ -137,5 +123,25 @@ public class NguoiDungThongThuongService extends ConnectDatabase implements Busi
         int rowAffected = statement.executeUpdate();
         closeConnection();
         return rowAffected;
+    }
+
+    public ArrayList<QuyenVM> getQuyen(int maNghiepVu, String maAdmin) throws SQLException, ClassNotFoundException {
+        openConnection();
+        String sql = "EXEC LayQuyenAdminTheoNghiepVu ?,?";
+        PreparedStatement statement = connection.prepareStatement(sql);
+        statement.setInt(1, maNghiepVu);
+        statement.setString(2, maAdmin);
+        ArrayList<QuyenVM> quyenVMS = new ArrayList<>();
+        ResultSet res = statement.executeQuery();
+        while (res.next()) {
+            QuyenVM quyen = new QuyenVM();
+            quyen.setMaQuyen(res.getString(1));
+            quyen.setTenQuyen(res.getString(2));
+            quyen.setChoPhep(res.getBoolean(3));
+
+            quyenVMS.add(quyen);
+        }
+        closeConnection();
+        return quyenVMS;
     }
 }
