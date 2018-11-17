@@ -268,11 +268,11 @@
         <form class="content" method="post" action="" onsubmit="return checkForm(this)">
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputEmail4">Username</label>
-              <input type="text" class="form-control" id="inputUser" placeholder="Username" required>
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
             </div>
             <div class="form-group col-md-6">
-              <label for="password">Password</label>
+              <label for="password">Mật khẩu</label>
               <input type="password" name="password" class="form-control" id="password" placeholder="Nhập mật khẩu"
                 required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
             </div>
@@ -283,12 +283,16 @@
               required>
           </div>
           <div class="form-group">
-            <label for="inputAddress">Email</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Nhập email của bạn" required>
+            <label for="inputName">Họ và Tên</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Nhập họ và tên" required>
           </div>
           <div class="form-group">
             <label for="inputAddress2">Địa chỉ</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="1234 Main St">
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Nhập Địa chỉ">
+          </div>
+          <div class="form-group">
+            <label for="inputTel">Số điện thoại</label>
+            <input type="tel" class="form-control" id="inputTel" placeholder="Nhập Số điện thoại">
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
@@ -296,22 +300,14 @@
               <input type="date" class="form-control" id="inputBirthay">
             </div>
             <div class="form-group col-md-6">
-              <label for="inputState">Giới tính</label>
-              <select id="inputState" class="form-control">
+              <label for="inputGender">Giới tính</label>
+              <select id="inputGender" class="form-control">
                 <option selected>Nam</option>
                 <option>Nữ</option>
               </select>
             </div>
           </div>
-          <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                Check me out
-              </label>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary" id="btn-dang-ky">Sign up</button>
+          <button type="submit" class="btn btn-primary" id="btn-dang-ky">Đăng ký</button>
         </form>
       </div>
     </div>

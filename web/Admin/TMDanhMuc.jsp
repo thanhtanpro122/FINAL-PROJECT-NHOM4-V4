@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!-- <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%> -->
 <!DOCTYPE html>
@@ -48,7 +49,7 @@
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle">Quản lý Người dùng <b class="caret"></b>
                             </a>
-                            <ul class="dropdown-menu" id="menu1">
+                            <ul class="dropdown-menu" id="menu">
                                 <li>
                                     <a href="QlyNguoiDungThongThuong.jsp">Người dùng thông thường</a>
                                 </li>
@@ -59,35 +60,25 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="QLySanPham.jsp" data-toggle="dropdown" class="dropdown-toggle">Quản lý Sản phẩm
+                            <a href="" data-toggle="dropdown" class="dropdown-toggle">Quản lý Sản phẩm
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu" id="menu1">
-                                <li>
-                                    <a href="QLySanPham.jsp">Tôm</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Cua</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Cá</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Mực</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Ngao-Sò-Ốc</a>
-                                </li>
+                                <c:forEach var="danhMuc" items="${requestScope.danhMucs}">
+                                    <li>
+                                        <a href="QLSanPham?idDM=${danhMuc.maDanhmuc}">${danhMuc.tenDanhmuc}</a>
+                                    </li>
+                                </c:forEach>
                             </ul>
                         </li>
                         <li>
                             <a href="QlyBaiViet.jsp">Quản lý Bài Viết</a>
                         </li>
                         <li>
-                            <a href="QLyDanhMuc.jsp">Quản lý Danh mục</a>
+                            <a href="/Admin/QLDanhMuc">Quản lý Danh mục</a>
                         </li>
                         <li>
-                            <a href="QlyDonHang.jsp">Quản lý Đơn hàng</a>
+                            <a href="/Admin/QLDonHang">Quản lý Đơn hàng</a>
                         </li>
                         <li>
                             <a href="QlyQuyen.jsp">Quản lý quyền</a>
@@ -108,11 +99,11 @@
                     <div class="block-content collapse in">
                         <div class="span12">
                             <!-- BEGIN FORM-->
-                            <form action="#" id="form_sample_1" class="form-horizontal" style="width:70%;margin:0 auto;">
+                            <form action="/Admin/THMDanhMuc" id="form_sample_1" class="form-horizontal" style="width:70%;margin:0 auto;" method="post">
                                 <div class="control-group">
                                     <label class="control-label">Mã danh mục<span class="required">*</span></label>
                                     <div class="controls">
-                                        <input id="txt-ma-danh-muc" type="text" name="name" data-required="1" class="span6 m-wrap"
+                                        <input id="txt-ma-danh-muc" type="text" name="txtMaDanhMuc" data-required="1" class="span6 m-wrap"
                                             style="width:500px !important;" />
                                         <br><small class="text-danger" id="validate-txt-ma-danh-muc"></small>
                                     </div>
@@ -120,14 +111,14 @@
                                 <div class="control-group">
                                     <label class="control-label">Tên Danh Mục<span class="required">*</span></label>
                                     <div class="controls">
-                                        <input id="txt-ten-danh-muc" name="email" type="text" class="span6 m-wrap"
+                                        <input id="txt-ten-danh-muc" name="txtTenDanhMuc" type="text" class="span6 m-wrap"
                                             style="width:500px !important;" />
                                         <br><small class="text-danger" id="validate-txt-ten-danh-muc"></small>
                                     </div>
                                 </div>
                                 <div style="text-align:center;">
-                                    <button id="btn-them" type="submit" class="btn btn-primary">Thêm danh mục</button>
-                                    <button type="button" class="btn">Hủy bỏ</button>
+                                    <input id="btn-them" type="submit" class="btn btn-primary" value="Thêm">
+                                    <a href="/Admin/QLDanhMuc" type="button" class="btn">Hủy bỏ</a>
                                 </div>
                             </form>
 

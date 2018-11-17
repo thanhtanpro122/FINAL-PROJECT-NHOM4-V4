@@ -1,5 +1,6 @@
-<!-- <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%> -->
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -62,29 +63,19 @@
                             <a href="QLySanPham.jsp" data-toggle="dropdown" class="dropdown-toggle">Quản lý Sản phẩm
                                 <b class="caret"></b>
                             </a>
-                            <ul class="dropdown-menu" id="menu1">
-                                <li>
-                                    <a href="QLySanPham.jsp">Tôm</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Cua</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Cá</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Mực</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Ngao-Sò-Ốc</a>
-                                </li>
+                            <ul class="dropdown-menu" id="menu">
+                                <c:forEach var="danhMuc" items="${requestScope.danhMucs}">
+                                    <li>
+                                        <a href="QLSanPham?idDM=${danhMuc.maDanhmuc}">${danhMuc.tenDanhmuc}</a>
+                                    </li>
+                                </c:forEach>
                             </ul>
                         </li>
                         <li>
                             <a href="QlyBaiViet.jsp">Quản lý Bài Viết</a>
                         </li>
                         <li>
-                            <a href="QLyDanhMuc.jsp">Quản lý Danh mục</a>
+                            <a href="QLDanhMuc">Quản lý Danh mục</a>
                         </li>
                         <li>
                             <a href="QlyDonHang.jsp">Quản lý Đơn hàng</a>
@@ -110,7 +101,7 @@
                             <div class="table-toolbar">
                                 <div>
                                     <div style="float:left;">
-                                        <a href="TMSanPham.jsp"><button class="btn btn-success">Thêm mới <i class="icon-plus icon-white"></i></button></a>
+                                        <a href="/Admin/THMSanPham"><button class="btn btn-success">Thêm mới <i class="icon-plus icon-white"></i></button></a>
                                     </div>
                                     <div style="float:right;position: relative;">
                                         <!-- <button style="display:inline-block;position: absolute;top: 0;left:-70px;"
@@ -136,47 +127,28 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                <c:forEach var="sanPham" items="${requestScope.sanPhams}">
                                     <tr class="odd gradeX">
-                                        <td>tôm</td>
-                                        <td>1</td>
-                                        <td>tôm đất</td>
-                                        <td>150.000</td>
-                                        <td>10%</td>
-                                        <td>Cà mau</td>
-                                        <td>1/11/2018</td>
+                                        <td>${sanPham.maDanhMuc}</td>
+                                        <td>${sanPham.maSP}</td>
+                                        <td>${sanPham.tenSP}</td>
+                                        <td>${sanPham.giaSP}</td>
+                                        <td>${sanPham.phanTramKhuyenMai}</td>
+                                        <td>${sanPham.xuatXu}</td>
+                                        <td>${sanPham.ngayNhap}</td>
                                         <td>
-                                            <a href="ChiTietSanPham.jsp" class="btn"><i class="icon-eye-open"></i> View</a>
+                                            <a href="/Admin/CTSanPham?idSP=${sanPham.maSP}" class="btn"><i class="icon-eye-open"></i> View</a>
                                         </td>
                                         <td>
-                                            <a href="ChinhSuaSanPham.jsp" class="btn btn-primary"><i class="icon-pencil icon-white"></i>
+                                            <a href="/Admin/ChinhSuaSanPham?idSP=${sanPham.maSP}" class="btn btn-primary"><i class="icon-pencil icon-white"></i>
                                                 Edit</a>
                                         </td>
                                         <td>
-                                            <button class="btn btn-danger"><i class="icon-remove icon-white"></i>
-                                                Delete</button>
+                                            <a href="/Admin/XoaSanPham?idSP=${sanPham.maSP}" onclick="return confirm('Are you sure?')" class="btn btn-danger"><i class="icon-remove icon-white"></i>
+                                                Delete</a>
                                         </td>
                                     </tr>
-                                    <tr class="even gradeC">
-                                        <td>tôm</td>
-                                        <td>1</td>
-                                        <td>tôm đất</td>
-                                        <td>150.000</td>
-                                        <td>10%</td>
-                                        <td>Cà mau</td>
-                                        <td>1/11/2018</td>
-                                        <td>
-                                            <a href="ChiTietSanPham.jsp" class="btn"><i class="icon-eye-open"></i> View</a>
-                                        </td>
-                                        <td>
-                                            <a href="ChinhSuaSanPham.jsp" class="btn btn-primary"><i class="icon-pencil icon-white"></i>
-                                                Edit</a>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-danger"><i class="icon-remove icon-white"></i>
-                                                Delete</button>
-                                        </td>
-                                    </tr>
-
+                                </c:forEach>
                                 </tbody>
                             </table>
                             <div class="dataTables_paginate paging_bootstrap pagination" style="text-align:center">

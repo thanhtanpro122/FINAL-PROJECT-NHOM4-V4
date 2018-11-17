@@ -1,5 +1,6 @@
-<!-- <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%> -->
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -62,22 +63,12 @@
                             <a href="QLySanPham.jsp" data-toggle="dropdown" class="dropdown-toggle">Quản lý Sản phẩm
                                 <b class="caret"></b>
                             </a>
-                            <ul class="dropdown-menu" id="menu1">
-                                <li>
-                                    <a href="QLySanPham.jsp">Tôm</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Cua</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Cá</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Mực</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Ngao-Sò-Ốc</a>
-                                </li>
+                            <ul class="dropdown-menu" id="menu">
+                                <c:forEach var="danhMuc" items="${requestScope.danhMucs}">
+                                    <li>
+                                        <a href="QLSanPham?idDM=${danhMuc.maDanhmuc}">${danhMuc.tenDanhmuc}</a>
+                                    </li>
+                                </c:forEach>
                             </ul>
                         </li>
                         <li>
@@ -116,25 +107,20 @@
                                     <th>Số lượng</th>
                                     <th>Đơn giá</th>
                                 </tr>
+                                <c:forEach var="donHangs" items="${requestScope.donHang}">
                                 <tr>
-                                    <td>dh01</td>
-                                    <td>sp1</td>
-                                    <td>cá chép</td>
-                                    <td>2</td>
-                                    <td>200.000</td>
+                                    <td>${donHangs.maDonHang}</td>
+                                    <td>${donHangs.maSP}</td>
+                                    <td>${donHangs.tenSP}</td>
+                                    <td>${donHangs.soLuong}</td>
+                                    <td>${donHangs.gia}</td>
                                 </tr>
-                                <tr>
-                                    <th>dh01</th>
-                                    <td>sp2</td>
-                                    <td>tôm tít</td>
-                                    <td>3</td>
-                                    <td>400.000</td>
-                                </tr>
+                                </c:forEach>
                             </table>
                         </div>
                     </div>
                     <div style="text-align: center">
-                        <button type="button" class="btn btn-success btn-large">Quay về trang chủ</button>
+                        <a href="/Admin/QLDonHang" type="button" class="btn btn-success btn-large">Quay về trang chủ</a>
                     </div>
                 </div>
                 <!-- /block -->

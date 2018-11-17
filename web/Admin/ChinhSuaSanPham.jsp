@@ -1,5 +1,7 @@
-<!-- <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%> -->
+<jsp:useBean id="sanPham" scope="request" type="banhaisan.models.datamodels.SanPham"/>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -51,7 +53,7 @@
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle">Quản lý Người dùng <b class="caret"></b>
                             </a>
-                            <ul class="dropdown-menu" id="menu1">
+                            <ul class="dropdown-menu" id="menu">
                                 <li>
                                     <a href="QlyNguoiDungThongThuong.jsp">Người dùng thông thường</a>
                                 </li>
@@ -66,31 +68,21 @@
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu" id="menu1">
-                                <li>
-                                    <a href="QLySanPham.jsp">Tôm</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Cua</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Cá</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Mực</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Ngao-Sò-Ốc</a>
-                                </li>
+                                <c:forEach var="danhMuc" items="${requestScope.danhMucs}">
+                                    <li>
+                                        <a href="QLSanPham?idDM=${danhMuc.maDanhmuc}">${danhMuc.tenDanhmuc}</a>
+                                    </li>
+                                </c:forEach>
                             </ul>
                         </li>
                         <li>
                             <a href="QlyBaiViet.jsp">Quản lý Bài Viết</a>
                         </li>
                         <li>
-                            <a href="QLyDanhMuc.jsp">Quản lý Danh mục</a>
+                            <a href="/Admin/QLDanhMucp">Quản lý Danh mục</a>
                         </li>
                         <li>
-                            <a href="QlyDonHang.jsp">Quản lý Đơn hàng</a>
+                            <a href="/Admin/QLDonHang">Quản lý Đơn hàng</a>
                         </li>
                         <li>
                             <a href="QlyQuyen.jsp">Quản lý quyền</a>
@@ -111,44 +103,48 @@
                     <div class="block-content collapse in">
                         <div class="span12">
                             <!-- BEGIN FORM-->
-                            <form action="#" id="form_sample_1" class="form-horizontal" style="width:70%;margin:0 auto;">
+                            <form action="/Admin/ChinhSuaSanPham" id="form_sample_1" class="form-horizontal" style="width:70%;margin:0 auto;" method="post">
                                 <div class="control-group">
                                     <label class="control-label">Danh mục<span class="required">*</span></label>
                                     <div class="controls">
-                                        <select class="span6 m-wrap" name="category" style="width:500px !important;">
-                                            <option value="">Tôm</option>
-                                            <option value="Category 1">Cua</option>
-                                            <option value="Category 2">Cá</option>
-                                            <option value="Category 3">Mực</option>
-                                            <option value="Category 4">Ngao-Sò-Ốc</option>
+                                        <select class="span6 m-wrap" id="cb-danh-muc" name="cbdanhmuc" style="width:500px !important;" onchange="run()">
+                                            <c:forEach var="danhMuc" items="${requestScope.danhMucs}">
+                                                <option href="QLSanPham?idDM=${danhMuc.maDanhmuc}" value="${danhMuc.maDanhmuc}">${danhMuc.tenDanhmuc}</option>
+                                            </c:forEach>
                                         </select>
+                                        <input id="ma-danh-muc" name="txtMaDanhMuc" value="${sanPham.maDanhMuc}" type="hidden">
+                                        <script>function  run() {
+                                            document.getElementById("ma-danh-muc").value=document.getElementById("cb-danh-muc").value;
+                                        }</script>
                                     </div>
                                 </div>
+
                                 <div class="control-group">
                                     <label class="control-label">Mã sản phẩm<span class="required">*</span></label>
                                     <div class="controls">
-                                        <input name="name" id="txt-ma-sp" type="text" class="span6 m-wrap" style="width:500px !important;" value="sp01" />
+                                        <input disabled id="txt-ma-sp" type="text" class="span6 m-wrap" style="width:500px !important;" value="${sanPham.maSP}" />
+                                        <input name="txtMaSP" id="txt-ma-sp-hidden" type="hidden" class="span6 m-wrap" style="width:500px !important;" value="${sanPham.maSP}" />
                                         <br><small class="text-danger" id="validate-txt-ma-sp"></small>
                                     </div>
                                 </div>
                                 <div class="control-group">
                                     <label class="control-label">Tên sản phẩm<span class="required">*</span></label>
                                     <div class="controls">
-                                        <input id="txt-ten-sp" name="name" type="text" class="span6 m-wrap" style="width:500px !important;" value="tôm đất" />
+                                        <input id="txt-ten-sp" name="txtTenSP" type="text" class="span6 m-wrap" style="width:500px !important;" value="${sanPham.tenSP}" />
                                         <br><small class="text-danger" id="validate-txt-ten-sp"></small>
                                     </div>
                                 </div>
                                 <div class="control-group">
                                     <label class="control-label">Giá sản phẩm<span class="required">*</span></label>
                                     <div class="controls">
-                                        <input id="txt-gia-sp" name="name" type="text" class="span6 m-wrap" style="width:500px !important;" value="150000"/>
+                                        <input id="txt-gia-sp" name="txtGiaSP" type="number" class="span6 m-wrap" style="width:500px !important;" value="${sanPham.giaSP}" min="1"/>
                                         <br><small class="text-danger" id="validate-txt-gia-sp"></small>
                                     </div>
                                 </div>
                                 <div class="control-group">
                                     <label class="control-label">Phần trăm khuyến mãi<span class="required">*</span></label>
                                     <div class="controls">
-                                        <input id="txt-khuyen-mai" name="name" type="text" class="span6 m-wrap" style="width:500px !important;" value="20"/>
+                                        <input id="txt-khuyen-mai" name="txtPhanTramKhuyenMai" type="number" class="span6 m-wrap" style="width:500px !important;" value="${sanPham.phanTramKhuyenMai}" min="0" max="100"/>
                                         <br><small class="text-danger" id="validate-txt-khuyen-mai"></small>
                                     </div>
                                 </div>
@@ -165,20 +161,20 @@
                                 <div class="control-group">
                                     <label class="control-label">Xuất xứ<span class="required">*</span></label>
                                     <div class="controls">
-                                        <input id="txt-xuat-xu" name="name" type="text" class="span6 m-wrap" style="width:500px !important;" value="Cà Mau"/>
+                                        <input id="txt-xuat-xu" name="txtXuatXu" type="text" class="span6 m-wrap" style="width:500px !important;" value="${sanPham.xuatXu}"/>
                                         <br><small class="text-danger" id="validate-txt-xuat-xu"></small>
                                     </div>
                                 </div>
                                 <div class="control-group">
                                     <label class="control-label">Mô tả<span class="required">*</span></label>
                                     <div class="controls">
-                                        <textarea id="txt-mo-ta" name="name" type="text" class="span6 m-wrap" style="width:500px !important;">Tươi sống, có giá trị dinh dưỡng cao</textarea>
+                                        <textarea id="txt-mo-ta" name="txtMoTa" type="text" class="span6 m-wrap" style="width:500px !important;">${sanPham.moTa}</textarea>
                                         <br><small class="text-danger" id="validate-txt-mo-ta"></small>
                                     </div>
                                 </div>
                                 <div style="text-align:center;">
-                                    <button type="submit" id="btn-them" class="btn btn-primary">Hoàn tất</button>
-                                    <button type="button" class="btn">Hủy bỏ</button>
+                                    <input href="/Admin/QLSanPham?idDM=${sanPham.maDanhMuc}" type="submit" id="btn-them" class="btn btn-primary" value="Hoàn tất">
+                                    <a href="/Admin/QLSanPham?idDM=${sanPham.maDanhMuc}" type="button" class="btn">Hủy bỏ</a>
                                 </div>
                             </form>
 

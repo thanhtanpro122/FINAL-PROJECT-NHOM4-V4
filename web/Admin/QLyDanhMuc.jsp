@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!-- <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%> -->
 <!DOCTYPE html>
@@ -48,7 +49,7 @@
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle">Quản lý Người dùng <b class="caret"></b>
                             </a>
-                            <ul class="dropdown-menu" id="menu1">
+                            <ul class="dropdown-menu" id="menu">
                                 <li>
                                     <a href="QlyNguoiDungThongThuong.jsp">Người dùng thông thường</a>
                                 </li>
@@ -63,31 +64,21 @@
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu" id="menu1">
+                                <c:forEach var="danhMuc" items="${requestScope.danhMucs}">
                                 <li>
-                                    <a href="QLySanPham.jsp">Tôm</a>
+                                    <a href="QLSanPham?idDM=${danhMuc.maDanhmuc}">${danhMuc.tenDanhmuc}</a>
                                 </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Cua</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Cá</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Mực</a>
-                                </li>
-                                <li>
-                                    <a href="QLySanPham.jsp">Ngao-Sò-Ốc</a>
-                                </li>
+                                </c:forEach>
                             </ul>
                         </li>
                         <li>
                             <a href="QlyBaiViet.jsp">Quản lý Bài Viết</a>
                         </li>
                         <li>
-                            <a href="QLyDanhMuc.jsp">Quản lý Danh mục</a>
+                            <a href="/Admin/QLDanhMuc">Quản lý Danh mục</a>
                         </li>
                         <li>
-                            <a href="QlyDonHang.jsp">Quản lý Đơn hàng</a>
+                            <a href="/Admin/QLDonHang">Quản lý Đơn hàng</a>
                         </li>
                         <li>
                             <a href="QlyQuyen.jsp">Quản lý quyền</a>
@@ -110,7 +101,7 @@
                             <div class="table-toolbar">
                                 <div>
                                     <div style="float:left;">
-                                        <a href="TMDanhMuc.jsp"><button class="btn btn-success">Thêm mới <i class="icon-plus icon-white"></i></button></a>
+                                        <a href="/Admin/THMDanhMuc"><button class="btn btn-success">Thêm mới <i class="icon-plus icon-white"></i></button></a>
                                     </div>
                                     <div style="float:right;">
                                         <label>Search: <input type="text" aria-controls="example2"></label>
@@ -128,31 +119,20 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                <c:forEach var="danhMuc" items="${requestScope.danhMucs}">
                                     <tr class="odd gradeX">
-                                        <td>dm1</td>
-                                        <td>Cá</td>
+                                        <td>${danhMuc.maDanhmuc}</td>
+                                        <td>${danhMuc.tenDanhmuc}</td>
                                         <td>
-                                            <a href="ChinhSuaDanhMuc.jsp" class="btn btn-primary"><i class="icon-pencil icon-white"></i>
+                                            <a href="/Admin/ChinhSuaDanhMuc?idDM=${danhMuc.maDanhmuc}" class="btn btn-primary"><i class="icon-pencil icon-white"></i>
                                                 Edit</a>
                                         </td>
                                         <td>
-                                            <button class="btn btn-danger"><i class="icon-remove icon-white"></i>
-                                                Delete</button>
+                                            <a href="/Admin/XoaDanhMuc?idDM=${danhMuc.maDanhmuc}" onclick="return confirm('Are you sure?')" class="btn btn-danger" id="btn-xoa"><i class="icon-remove icon-white"></i>
+                                                Delete</a>
                                         </td>
                                     </tr>
-                                    <tr class="even gradeC">
-                                        <td>dm2</td>
-                                        <td>Tôm</td>
-                                        <td>
-                                            <a href="ChinhSuaDanhMuc.jsp" class="btn btn-primary"><i class="icon-pencil icon-white"></i>
-                                                Edit</a>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-danger"><i class="icon-remove icon-white"></i>
-                                                Delete</button>
-                                        </td>
-                                    </tr>
-
+                                </c:forEach>
                                 </tbody>
                             </table>
                             <div class="dataTables_paginate paging_bootstrap pagination" style="text-align:center">
