@@ -1,6 +1,6 @@
 package banhaisan.controllers.nguoidungthongthuong;
 
-import banhaisan.models.businessmodels.NguoiDungThongThuongService;
+import banhaisan.models.datahandle.NguoiDungThongThuongService;
 import banhaisan.models.datamodels.NguoiDung;
 
 import javax.servlet.RequestDispatcher;

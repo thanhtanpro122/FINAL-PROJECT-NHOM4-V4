@@ -1,4 +1,4 @@
-package banhaisan.models.businessmodels;
+package banhaisan.models.datahandle;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

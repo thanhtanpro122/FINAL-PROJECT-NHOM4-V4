@@ -1,7 +1,7 @@
 package banhaisan.controllers.donhang;
 
-import banhaisan.models.businessmodels.DanhMucService;
-import banhaisan.models.businessmodels.DonHangService;
+import banhaisan.models.datahandle.DanhMucService;
+import banhaisan.models.datahandle.DonHangService;
 import banhaisan.models.datamodels.DanhMuc;
 import banhaisan.models.datamodels.DonHang;
 

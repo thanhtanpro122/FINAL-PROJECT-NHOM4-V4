@@ -1,6 +1,6 @@
 package banhaisan.controllers.sanphamadmin;
 
-import banhaisan.models.businessmodels.SanPhamService;
+import banhaisan.models.datahandle.SanPhamService;
 import banhaisan.models.datamodels.SanPham;
 
 import javax.servlet.ServletException;

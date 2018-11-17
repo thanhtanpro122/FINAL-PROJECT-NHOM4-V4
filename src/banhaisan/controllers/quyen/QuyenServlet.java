@@ -1,6 +1,6 @@
 package banhaisan.controllers.quyen;
 
-import banhaisan.models.businessmodels.QuyenService;
+import banhaisan.models.datahandle.QuyenService;
 import banhaisan.models.datamodels.Quyen;
 
 import javax.servlet.RequestDispatcher;
