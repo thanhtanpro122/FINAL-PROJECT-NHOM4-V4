@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!-- <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%> -->
 <!DOCTYPE html>
@@ -106,26 +107,40 @@
                     <div class="block-content collapse in">
                         <div class="span12">
                             <!-- BEGIN FORM-->
-                            <form action="#" id="form_sample_1" class="form-horizontal" style="width:100%;margin:0 auto;">
+                            <form action="/Admin/TMBaiViet" id="form_sample_1" class="form-horizontal" style="width:100%;margin:0 auto;" method="post">
                                 <div class="control-group">
                                     <label class="control-label">Mã bài viết(bắt buộc)<span class="required">*</span></label>
                                     <div class="controls">
-                                        <input id="txt-ma-bai-viet" type="text" name="name" data-required="1" class="span6 m-wrap" style="width:96% !important;" />
+                                        <input id="txt-ma-bai-viet" type="text" name="txt-ma-bai-viet" data-required="1" class="span6 m-wrap" style="width:69% !important;" />
                                         <br><small class="text-danger" id="validate-txt-ma-bai-viet"></small>
                                     </div>
                                 </div>
                                 <div class="control-group">
                                     <label class="control-label">Tiêu đề bài viết(bắt buộc)<span class="required">*</span></label>
                                     <div class="controls">
-                                        <input id="txt-tieu-de" name="email" type="text" class="span6 m-wrap" style="width:96% !important;" />
+                                        <input id="txt-tieu-de" name="txt-tieu-de" type="text" class="span6 m-wrap" style="width:69% !important;" />
                                         <br><small class="text-danger" id="validate-txt-tieu-de"></small>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Danh mục<span class="required">*</span></label>
+                                    <div class="controls">
+                                        <select class="span6 m-wrap" id="cb-danh-muc" name="cbdanhmuc" style="width:500px !important;" onchange="run()">
+                                            <c:forEach var="danhMuc" items="${requestScope.danhMucs}">
+                                                <option href="QLSanPham?idDM=${danhMuc.maDanhmuc}" value="${danhMuc.maDanhmuc}">${danhMuc.tenDanhmuc}</option>
+                                            </c:forEach>
+                                        </select>
+                                        <input id="ma-danh-muc" name="txtMaDanhMuc" value="${sanPham.maDanhMuc}" type="hidden">
+                                        <script>function  run() {
+                                            document.getElementById("ma-danh-muc").value=document.getElementById("cb-danh-muc").value;
+                                        }</script>
                                     </div>
                                 </div>
                                 <div class="control-group">
                                     <label class="control-label">Nội dung(bắt buộc)<span class="required">*</span></label>
                                     <div class="controls" style="margin-top: -25px;">
                                         <div class="block-content collapse in">
-                                            <textarea id="bootstrap-editor" placeholder="Enter text ..." style="width:670px;height:500px;"></textarea>
+                                            <textarea id="bootstrap-editor" placeholder="Enter text ..." style="width:670px;height:500px;" name="text-noi-dung"></textarea>
                                             <br><small class="text-danger" id="validate-bootstrap-editor"></small>
                                         </div>
                                     </div>

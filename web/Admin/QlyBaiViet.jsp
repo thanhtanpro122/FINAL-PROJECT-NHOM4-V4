@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!-- <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%> -->
 <!DOCTYPE html>
@@ -14,6 +15,13 @@
     <link href="assets/styles.css" rel="stylesheet" media="screen">
     <script src="vendors/jquery-1.9.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        function confirmDelete(obj) {
+            if (confirm("Bạn có chắc chắn muốn xóa bài viết này không?")) {
+                $.post("/Admin/XoaBaiViet",{ txtMaBaiViet : $(obj).attr("maBaiViet").trim() }, content => location.href="/Admin/QlyBaiViet");
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -50,11 +58,11 @@
                             </a>
                             <ul class="dropdown-menu" id="menu1">
                                 <li>
-                                    <a href="QlyNguoiDungThongThuong.jsp">Người dùng thông thường</a>
+                                    <a href="/Admin/NguoiDungThongThuong">Người dùng thông thường</a>
                                 </li>
                                 <li class="divider"></li>
                                 <li>
-                                    <a href="QlyAdmin.jsp">Admin</a>
+                                    <a href="/Admin/NguoiDungAdmin">Admin</a>
                                 </li>
                             </ul>
                         </li>
@@ -110,7 +118,7 @@
                             <div class="table-toolbar">
                                 <div>
                                     <div style="float:left;">
-                                        <a href="TMBaiViet.jsp"><button class="btn btn-success">Thêm mới <i class="icon-plus icon-white"></i></button></a>
+                                        <a href="/Admin/TMBaiViet"><button class="btn btn-success">Thêm mới <i class="icon-plus icon-white"></i></button></a>
                                     </div>
                                     <div style="float:right;">
                                         <label>Search: <input type="text" aria-controls="example2"></label>
@@ -130,43 +138,26 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                <c:forEach var="baiViet" items="${requestScope.baiViet}">
                                     <tr class="odd gradeX">
-                                        <td>bv01</td>
-                                        <td>1/11/2018</td>
-                                        <td>Mách bạn công thức tôm sú rim cay xé lưỡi độc đáo và thử thách các tín đồ
-                                            của món cay</td>
+                                        <td>${baiViet.maBaiViet}</td>
+                                        <td>${baiViet.ngayDang}</td>
+                                        <td>${baiViet.tieuDe}</td>
                                         <td>
-                                            <a href="ChiTietBaiViet.jsp" class="btn"><i class="icon-eye-open"></i>
+                                            <a href="/Admin/XemCTBaiViet?idBV=${baiViet.maBaiViet}" class="btn"><i class="icon-eye-open"></i>
                                                 View</a>
                                         </td>
                                         <td>
-                                            <a href="ChinhSuaBaiViet.jsp" class="btn btn-primary"><i class="icon-pencil icon-white"></i>
+                                            <a href="/Admin/ChinhSuaBaiViet?idBV=${baiViet.maBaiViet}" class="btn btn-primary"><i class="icon-pencil icon-white"></i>
                                                 Edit</a>
                                         </td>
                                         <td>
-                                            <button class="btn btn-danger"><i class="icon-remove icon-white"></i>
+                                            <button class="btn btn-danger" maBaiViet="${baiViet.maBaiViet}" onclick="confirmDelete(this);"><i
+                                                    class="icon-remove icon-white"></i>
                                                 Delete</button>
                                         </td>
                                     </tr>
-                                    <tr class="even gradeC">
-                                        <td>bv01</td>
-                                        <td>1/11/2018</td>
-                                        <td>Mách bạn công thức tôm sú rim cay xé lưỡi độc đáo và thử thách các tín đồ
-                                            của món cay</td>
-                                        <td>
-                                            <a href="ChiTietBaiViet.jsp" class="btn"><i class="icon-eye-open"></i>
-                                                View</a>
-                                        </td>
-                                        <td>
-                                            <a href="ChinhSuaBaiViet.jsp" class="btn btn-primary"><i class="icon-pencil icon-white"></i>
-                                                Edit</a>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-danger"><i class="icon-remove icon-white"></i>
-                                                Delete</button>
-                                        </td>
-                                    </tr>
-
+                                </c:forEach>
                                 </tbody>
                             </table>
                             <div class="dataTables_paginate paging_bootstrap pagination" style="text-align:center">

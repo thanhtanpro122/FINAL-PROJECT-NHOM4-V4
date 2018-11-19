@@ -41,7 +41,7 @@ public class PhanQuyenAdminServlet extends HttpServlet {
 //                out.print(item.getTenQuyen());
 //                out.print("</label>\n");
                 out.print("<label>\n "+
-                        "<input " + (item.isChoPhep() ? "checked" : "")    +" class='uniform_on' type='checkbox' id='optionsCheckbox5' value='option1'> "+ item.getTenQuyen()+
+                        "<input name='quyen' " + (item.isChoPhep() ? "checked" : "") +" class='uniform_on' type='checkbox' id='optionsCheckbox5' value='" + item.getMaQuyen() + "'> "+ item.getTenQuyen()+
                         "</label>");
             }
         } catch (SQLException | ClassNotFoundException e) {
