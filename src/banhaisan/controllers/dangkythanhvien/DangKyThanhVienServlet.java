@@ -1,7 +1,7 @@
 package banhaisan.controllers.dangkythanhvien;
 
-import banhaisan.models.datahandle.NguoiDungAdminService;
-import banhaisan.models.datahandle.NguoiDungThongThuongService;
+import banhaisan.models.businessmodels.NguoiDungThongThuongService;
+import banhaisan.models.businessmodels.NguoiDungAdminService;
 import banhaisan.models.datamodels.NguoiDung;
 
 import javax.servlet.RequestDispatcher;
