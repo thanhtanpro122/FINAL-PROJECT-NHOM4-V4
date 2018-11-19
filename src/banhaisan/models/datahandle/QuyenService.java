@@ -125,9 +125,35 @@ public class QuyenService extends ConnectDatabase implements Business<Quyen> {
         PreparedStatement statement = connection.prepareStatement(sql);
         statement.setString(1,maQuyen);
         statement.setString(2,maNguoiDung);
-
         int res = statement.executeUpdate();
         closeConnection();
         return res;
+    }
+
+    public int xoaQuyen(String maQuyen, String manguoiDung) throws SQLException, ClassNotFoundException {
+        openConnection();
+        String sql = "EXEC XoaQuyen ?,?";
+        PreparedStatement statement = connection.prepareStatement(sql);
+        statement.setString(1, maQuyen);
+        statement.setString(2, manguoiDung);
+        int res = statement.executeUpdate();
+        closeConnection();
+        return res;
+    }
+
+    public ArrayList<Quyen> LayQuyenCuaNghiepVu(int manghiepvu) throws SQLException, ClassNotFoundException {
+        openConnection();
+        String sql = "select * from layQuyenCuanghiepVu(?)";
+        PreparedStatement statement = connection.prepareStatement(sql);
+        statement.setInt(1, manghiepvu);
+        ResultSet res = statement.executeQuery();
+        ArrayList<Quyen> quyens = new ArrayList<>();
+        while (res.next()) {
+            Quyen q = new Quyen();
+            q.setMaQuyen(res.getString(1));
+            quyens.add(q);
+        }
+        closeConnection();
+        return quyens;
     }
 }

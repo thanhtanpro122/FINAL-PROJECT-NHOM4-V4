@@ -82,7 +82,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="QlyBaiViet.jsp">Quản lý Bài Viết</a>
+                            <a href="/Admin/QlyBaiViet">Quản lý Bài Viết</a>
                         </li>
                         <li>
                             <a href="QLyDanhMuc.jsp">Quản lý Danh mục</a>

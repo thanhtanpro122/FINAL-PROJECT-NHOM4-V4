@@ -1,5 +1,6 @@
-<!-- <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%> -->
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -106,69 +107,40 @@
                     <div class="block-content collapse in">
                         <div class="span12">
                             <!-- BEGIN FORM-->
-                            <form action="#" id="form_sample_1" class="form-horizontal" style="width:100%;margin:0 auto;">
+                            <form action="/Admin/ChinhSuaBaiViet" id="form_sample_1" class="form-horizontal" style="width:100%;margin:0 auto;" method="post">
                                 <div class="control-group">
                                     <label class="control-label">Mã bài viết(bắt buộc)<span class="required">*</span></label>
                                     <div class="controls">
-                                        <input id="txt-ma-bai-viet" type="text" name="name" data-required="1" class="span6 m-wrap"
-                                            style="width:96% !important;" value="bv01" />
+                                        <input readonly id="txt-ma-bai-viet" type="text" name="txt-ma-bai-viet" data-required="1" class="span6 m-wrap" style="width:69% !important;" value="${baiViet.maBaiViet}" />
                                         <br><small class="text-danger" id="validate-txt-ma-bai-viet"></small>
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Tiêu đề bài viết(bắt buộc)<span class="required">*</span></label>
+                                    <label class="control-label">Tiêu đề bài viết<span class="required">*</span></label>
                                     <div class="controls">
-                                        <input id="txt-tieu-de" name="email" type="text" class="span6 m-wrap" style="width:96% !important;"
-                                            value="Mách bạn công thức tôm sú rim cay xé lưỡi độc đáo và thử thách các tín đồ của món cay" />
+                                        <input  id="txt-tieu-de" name="txt-tieu-de" type="text" class="span6 m-wrap" style="width:69% !important;" value="${baiViet.tieuDe}" />
                                         <br><small class="text-danger" id="validate-txt-tieu-de"></small>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Danh mục<span class="required">*</span></label>
+                                    <div class="controls">
+                                        <select class="span6 m-wrap" id="cb-danh-muc" name="cbdanhmuc" style="width:500px !important;" onchange="run()">
+                                            <c:forEach var="danhMuc" items="${requestScope.danhMucs}">
+                                                <option href="QLSanPham?idDM=${danhMuc.maDanhmuc}" value="${danhMuc.maDanhmuc}">${danhMuc.tenDanhmuc}</option>
+                                            </c:forEach>
+                                        </select>
+                                        <input id="ma-danh-muc" name="txtMaDanhMuc" value="${sanPham.maDanhMuc}" type="hidden">
+                                        <script>function  run() {
+                                            document.getElementById("ma-danh-muc").value=document.getElementById("cb-danh-muc").value;
+                                        }</script>
                                     </div>
                                 </div>
                                 <div class="control-group">
                                     <label class="control-label">Nội dung(bắt buộc)<span class="required">*</span></label>
                                     <div class="controls" style="margin-top: -25px;">
                                         <div class="block-content collapse in">
-                                            <textarea id="bootstrap-editor" placeholder="Enter text ..." style="width:670px;height:500px;">Nếu bạn là tín đồ của các món cay thì chắc chắn với các công thức có vị cay không thể nảo làm khó được vị giác của bạn. Nếu như nhiều người khi nhắc đến các món cay thường nhắc đến khô gà xé cay hay mực rim cay thì hôm nay chúng tôi xin gửi đến cho bạn một công thức vô cùng tuyệt vời với tôm sú. Đó là công thức tôm sú rim cay xé lưỡi.
-
-                                                    Đúng như tên gọi của món ăn này, công thức tôm sú rim cay xé lưỡi này chắc chắn sẽ khiến cho vị giác của người thưởng thức bị đánh thức bởi độ cay nồng nhưng vẫn giữ được hương vị tuyệt vời từ tôm. Cuối tuần này rảnh rỗi, bạn hãy vào bếp và thử sức nhé.
-                                                    
-                                                    tôm sú bóc nõn
-                                                    
-                                                    Công thức tôm sú rim cay xé lưỡi cho các tín đồ yêu thích món cay
-                                                    Không giống như các công thức nấu ăn về món cay trước đây tôm sú rim cay xé lưỡi là sự kết hợp tương đối đơn giản và dễ thực hiện giữa các gia vị thường thấy. Việc bạn cần phải làm chỉ cần thu thập đầy đủ các nguyên liệu va bắt tay ngay vào chế biến thôi nào.
-                                                    
-                                                    Nguyên liệu cần chuẩn bị
-                                                    
-                                                    Để tôm sú rim cay chuẩn vị bạn cần khoảng 200 gram tôm sú hoặc nhiều hơn tùy theo khẩu phần ăn, ớt đỏ khô đã bỏ hạt, đậu Hà Lan, lạc bóc vỏ và các gia giảm dùng trong quá trình nêm nếm bao gồm: 1/2 thìa canh đường, 1/2 thìa nhỏ tiêu đỏ, 1 thìa nhỏ mẻ, 1 thìa canh xì dầu, 2 tép tỏi băm nhỏ, hành lá, muối.
-                                                    
-                                                    Như vậy có thể thấy, với tôm sú rim cay xé lưỡi bạn hoàn toàn có thể thực hiện ở bất kì mùa nào trong năm bởi nguyên liệu của chúng vô cùng dễ tìm kiếm. Ngay khi đã có đầy đủ các nguyên liệu rồi bạn còn chân chờ gì mà không bắt tay ngay vào thực hiện công thức này thôi nào.
-                                                    
-                                                    Nguyên liệu làm món tôm sú
-                                                    
-                                                    Quy trình chế biến tôm sú rim cay xé lưỡi:
-                                                    
-                                                    Bước 1: thực hiện ở chế các nguyên liệu
-                                                    
-                                                    – Tôm sú ngay từ khi mua về bạn hãy tiến hành rửa thật sạch, sau đó bóc đi phần vỏ, rút chỉ đen trên lưng tôm. Bạn hãy lấy giấy ăn khô lau tôm để khi chiên không bị bắn.
-                                                    
-                                                    – Ngâm phần ớt đỏ khô vào nước ấm khoảng 10 phút rồi đem ra thái nhỏ.
-                                                    
-                                                    Bước 2: chế biến tôm sú rim cay xé lưỡi
-                                                    
-                                                    – Đổ dầu ăn vào chảo, sau đó cho phần tỏi băm và ớt vào phi cho đến khi hỗn hợp này dậy mùi thơm.
-                                                    
-                                                    – Cho tiếp hạt tiêu, mẻ, xì dầu, đường và 1 thìa canh nước lọc vào, đun khoảng 3 phút khi hỗn hợp này sôi thì tắt bếp, đổ ra bát riêng.
-                                                    
-                                                    – Đun chảo dầu sôi, thả tôm sú vào lần lượt chiên chín vàng thì gắp ra đĩa trải trước một lớp giấy thấm dầu cho ráo mỡ
-                                                    
-                                                    Bước 3:
-                                                    
-                                                    – Tận dụng chảo dầu vừa chiên tôm để chiên lạc 7-8 phút rồi vớt ra.
-                                                    
-                                                    – Đổ bát nước sốt vào một chiếc chảo khác, cho đậu Hà Lan vào đảo khoảng 3 phút đến khi đậu trở nên mềm thì đổ tôm và lạc vào, rim từ 3-5 phút cho tất cả các nguyên liệu đều ngấm đều các gia vị thì rắc hành thái nhỏ, tắt bếp. Vậy là công thức tôm sú rim cay xé lưỡi của bạn đã hoàn thành rồi đấy, cuối cùng bạn chỉ cần múc ra đĩa dùng nóng với cơm. Nếu không thích ăn quá cay bạn có thể gia giảm lượng ớt và hạt tiêu tùy ý thích.
-                                                    
-                                                    Tôm rim cay
-                                                    
-                                                    Hi vọng với công thức tôm sú kết hợp với vị cay nồng của ớt khô này sẽ làm bạn yêu thích và có thể thực hiện trổ tài cùng cho gia đình thưởng thức. Hãy thử sức và cho chúng tôi những trải nghiệm mới nhất bạn nhé.</textarea>
+                                            <textarea id="bootstrap-editor" placeholder="Enter text ..." style="width:670px;height:500px;" name="text-noi-dung">${baiViet.noiDung}</textarea>
                                             <br><small class="text-danger" id="validate-bootstrap-editor"></small>
                                         </div>
                                     </div>
