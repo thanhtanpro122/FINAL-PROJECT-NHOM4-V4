@@ -316,11 +316,11 @@
                             <li>
                                 <a href="#!">
                                     <div class="image" style="display:flex;">
-                                        <img src="resources/images/Fish/ca-chep-gion01.jpg">
+                                        <img src="resources/images/Fish/cabop01.jpg">
                                         <div class="name">
-                                            <p>Cá chép giòn</p><br>
+                                            <p>Cá bóp</p><br>
                                             <p>
-                                                <em>350.000đ/kg</em>
+                                                <em>150.000đ/kg</em>
                                             </p>
                                         </div>
                                     </div>
@@ -329,11 +329,11 @@
                             <li>
                                 <a href="#!">
                                     <div class="image" style="display:flex;">
-                                        <img src="resources/images/Fish/ca-chep-gion01.jpg">
+                                        <img src="resources/images/Fish/ca-mu-nghe.png">
                                         <div class="name">
-                                            <p>Cá chép giòn</p><br>
+                                            <p>Cá mú</p><br>
                                             <p>
-                                                <em>350.000đ/kg</em>
+                                                <em>200.000đ/kg</em>
                                             </p>
                                         </div>
                                     </div>
@@ -342,11 +342,11 @@
                             <li>
                                 <a href="#!">
                                     <div class="image" style="display:flex;">
-                                        <img src="resources/images/Fish/ca-chep-gion01.jpg">
+                                        <img src="resources/images/Fish/ca-ro-phi01.jpg">
                                         <div class="name">
-                                            <p>Cá chép giòn</p><br>
+                                            <p>Cá rô phi</p><br>
                                             <p>
-                                                <em>350.000đ/kg</em>
+                                                <em>120.000đ/kg</em>
                                             </p>
                                         </div>
                                     </div>

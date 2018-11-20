@@ -334,10 +334,13 @@
                         <form action="index-Login.jsp" method="post" onsubmit="return checkForm(this)">
                             <div class="fields-grid">
                                 <div class="styled-input">
-                                    <input type="email" placeholder="Email của bạn" name="Your Email" required="">
+                                    <input type="text" placeholder="IP Address" name="txt-ip" required="">
                                 </div>
                                 <div class="styled-input">
-                                    <input type="password" placeholder="Nhập password" name="password" required="">
+                                    <input type="email" placeholder="Email của bạn" name="txt-email" required="">
+                                </div>
+                                <div class="styled-input">
+                                    <input type="password" placeholder="Nhập password" name="txt-password" required="">
                                 </div>
                                 <button type="submit" class="btn subscrib-btnn">Đăng nhập</button>
                             </div>
