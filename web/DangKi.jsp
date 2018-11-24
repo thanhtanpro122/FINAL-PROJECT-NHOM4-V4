@@ -265,15 +265,15 @@
       <div class="col-sm-6" style="margin :auto;">
         <h2 style="text-align:center">Đăng kí thành viên</h2>
         <br>
-        <form class="content" method="post" action="" onsubmit="return checkForm(this)">
+        <form class="content" method="post" action="/DangKyThanhVien" onsubmit="return checkForm(this)" >
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputEmail">Email</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+              <input name="txt-email" type="email" class="form-control" id="inputEmail" placeholder="Email" required>
             </div>
             <div class="form-group col-md-6">
               <label for="password">Mật khẩu</label>
-              <input type="password" name="password" class="form-control" id="password" placeholder="Nhập mật khẩu"
+              <input name="txt-mat-khau" type="password" name="password" class="form-control" id="password" placeholder="Nhập mật khẩu"
                 required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
             </div>
           </div>
@@ -284,26 +284,26 @@
           </div>
           <div class="form-group">
             <label for="inputName">Họ và Tên</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Nhập họ và tên" required>
+            <input name="txt-ten" type="text" class="form-control" id="inputName" placeholder="Nhập họ và tên" required>
           </div>
           <div class="form-group">
             <label for="inputAddress2">Địa chỉ</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Nhập Địa chỉ">
+            <input name="txt-email" type="text" class="form-control" id="inputAddress2" placeholder="Nhập Địa chỉ">
           </div>
           <div class="form-group">
             <label for="inputTel">Số điện thoại</label>
-            <input type="tel" class="form-control" id="inputTel" placeholder="Nhập Số điện thoại">
+            <input name="txt-dien-thoai" type="tel" class="form-control" id="inputTel" placeholder="Nhập Số điện thoại">
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputCity">Ngày sinh</label>
-              <input type="date" class="form-control" id="inputBirthay">
+              <label for="inputBirthay">Ngày sinh</label>
+              <input name="dt-ngay-sinh" type="date" class="form-control" id="inputBirthay">
             </div>
             <div class="form-group col-md-6">
               <label for="inputGender">Giới tính</label>
-              <select id="inputGender" class="form-control">
-                <option selected>Nam</option>
-                <option>Nữ</option>
+              <select id="inputGender" class="form-control" name="txt-gioi-tinh">
+                <option value="1" selected>Nam</option>
+                <option value="0">Nữ</option>
               </select>
             </div>
           </div>
