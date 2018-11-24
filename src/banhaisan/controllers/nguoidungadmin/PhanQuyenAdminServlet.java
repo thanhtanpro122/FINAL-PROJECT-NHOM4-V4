@@ -1,7 +1,7 @@
 package banhaisan.controllers.nguoidungadmin;
 
-import banhaisan.models.businessmodels.NghiepVuService;
-import banhaisan.models.businessmodels.NguoiDungAdminService;
+import banhaisan.models.datahandle.NghiepVuService;
+import banhaisan.models.datahandle.NguoiDungAdminService;
 import banhaisan.models.datamodels.NguoiDung;
 import banhaisan.models.viewmodels.QuyenVM;
 

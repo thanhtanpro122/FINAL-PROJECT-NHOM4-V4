@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 
-public class SanPhamService extends ConnectDatabase implements Business<SanPham>{
+public class SanPhamService extends ConnectDatabase implements Business<SanPham> {
     private static final SanPhamService instance = new SanPhamService();
     private SanPhamService(){}
     public static SanPhamService getInstance()
@@ -21,7 +21,7 @@ public class SanPhamService extends ConnectDatabase implements Business<SanPham>
         ArrayList<SanPham> sanPhams = new ArrayList<>();
         openConnection();
 
-        String query = "EXEC LaySanPham";
+        String query = "select  * from dbo.fc_DanhSachSanPhamTheoDanhMuc ?";
         PreparedStatement statement = connection.prepareStatement(query);
         statement.setEscapeProcessing(true);
         statement.setQueryTimeout(90);
@@ -50,7 +50,37 @@ public class SanPhamService extends ConnectDatabase implements Business<SanPham>
         }
         ArrayList<SanPham> sanPhams = new ArrayList<>();
         openConnection();
-        String query = "SELECT * FROM LaySanPhamTheoDanhMuc(?)";
+        String query = "select  * from dbo.fc_DanhSachSanPhamTheoDanhMuc(?)";
+        PreparedStatement statement = connection.prepareStatement(query);
+        statement.setQueryTimeout(90);
+        statement.setEscapeProcessing(true);
+        statement.setString(1,keys[0].toString());
+
+        ResultSet resultSet = statement.executeQuery();
+        while (resultSet.next())
+        {
+            SanPham sanPham = new SanPham();
+            sanPham.setMaDanhMuc(resultSet.getString(1));
+            sanPham.setMaSP(resultSet.getString(2));
+            sanPham.setTenSP(resultSet.getString(3));
+            sanPham.setGiaSP(Double.parseDouble(resultSet.getString(4)));
+            sanPham.setPhanTramKhuyenMai(Integer.parseInt(resultSet.getString(5)));
+            sanPham.setXuatXu(resultSet.getString(6));
+            sanPham.setNgayNhap(resultSet.getDate(7));
+
+            sanPhams.add(sanPham);
+        }
+        closeConnection();
+        return sanPhams;
+    }
+    public ArrayList<SanPham> getDataCategoryIndex(Object... keys) throws SQLException, ClassNotFoundException{
+        if(keys.length<=0)
+        {
+            return null;
+        }
+        ArrayList<SanPham> sanPhams = new ArrayList<>();
+        openConnection();
+        String query = "select  * from dbo.fc_IndexDSSanPham(?)";
         PreparedStatement statement = connection.prepareStatement(query);
         statement.setQueryTimeout(90);
         statement.setEscapeProcessing(true);
@@ -63,11 +93,6 @@ public class SanPhamService extends ConnectDatabase implements Business<SanPham>
             sanPham.setMaSP(resultSet.getString(1));
             sanPham.setTenSP(resultSet.getString(2));
             sanPham.setGiaSP(Double.parseDouble(resultSet.getString(3)));
-            sanPham.setPhanTramKhuyenMai(Integer.parseInt(resultSet.getString(4)));
-            sanPham.setXuatXu(resultSet.getString(5));
-            sanPham.setMoTa(resultSet.getString(6));
-            sanPham.setMaDanhMuc(resultSet.getString(7));
-            sanPham.setNgayNhap(resultSet.getDate(8));
 
             sanPhams.add(sanPham);
         }
@@ -80,7 +105,7 @@ public class SanPhamService extends ConnectDatabase implements Business<SanPham>
             return null;
         }
         openConnection();
-        String query = "EXEC LayMotSanPham ?";
+        String query = "select * from dbo.fc_ChiTietSanPham(?)";
         PreparedStatement statement = connection.prepareStatement(query);
         statement.setQueryTimeout(90);
         statement.setEscapeProcessing(true);
@@ -91,13 +116,13 @@ public class SanPhamService extends ConnectDatabase implements Business<SanPham>
         if(resultSet.next())
         {
             sanPham = new SanPham();
-            sanPham.setMaSP(resultSet.getString(1));
-            sanPham.setTenSP(resultSet.getString(2));
-            sanPham.setGiaSP(Double.parseDouble(resultSet.getString(3)));
-            sanPham.setPhanTramKhuyenMai(Integer.parseInt(resultSet.getString(4)));
-            sanPham.setXuatXu(resultSet.getString(5));
-            sanPham.setMoTa(resultSet.getString(6));
-            sanPham.setMaDanhMuc(resultSet.getString(7));
+            sanPham.setMaDanhMuc(resultSet.getString(1));
+            sanPham.setMaSP(resultSet.getString(2));
+            sanPham.setTenSP(resultSet.getString(3));
+            sanPham.setGiaSP(Double.parseDouble(resultSet.getString(4)));
+            sanPham.setPhanTramKhuyenMai(Float.parseFloat(resultSet.getString(5)));
+            sanPham.setXuatXu(resultSet.getString(6));
+            sanPham.setMoTa(resultSet.getString(7));
 
         }
         closeConnection();
@@ -116,7 +141,7 @@ public class SanPhamService extends ConnectDatabase implements Business<SanPham>
         statement.setString(1,sanPham.getMaSP());
         statement.setString(2,sanPham.getTenSP());
         statement.setDouble(3,sanPham.getGiaSP());
-        statement.setInt(4,sanPham.getPhanTramKhuyenMai());
+        statement.setFloat(4,sanPham.getPhanTramKhuyenMai());
         statement.setString(5,sanPham.getXuatXu());
         statement.setString(6,sanPham.getMoTa());
         statement.setString(7,sanPham.getMaDanhMuc());
@@ -145,14 +170,14 @@ public class SanPhamService extends ConnectDatabase implements Business<SanPham>
     public int modify(SanPham sanPham) throws SQLException, ClassNotFoundException {
         openConnection();
 
-        String query = "EXEC ChinhSuaSanPham ?,?,?,?,?,?,?";
+        String query = "EXEC SuaSanPham ?,?,?,?,?,?,?";
         PreparedStatement statement = connection.prepareStatement(query);
         statement.setEscapeProcessing(true);
         statement.setQueryTimeout(90);
         statement.setString(1,sanPham.getMaSP());
         statement.setString(2,sanPham.getTenSP());
         statement.setDouble(3,sanPham.getGiaSP());
-        statement.setInt(4,sanPham.getPhanTramKhuyenMai());
+        statement.setFloat(4,sanPham.getPhanTramKhuyenMai());
         statement.setString(5,sanPham.getXuatXu());
         statement.setString(6,sanPham.getMoTa());
         statement.setString(7,sanPham.getMaDanhMuc());

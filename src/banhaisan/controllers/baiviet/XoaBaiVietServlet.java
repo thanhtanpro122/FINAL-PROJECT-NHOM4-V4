@@ -1,7 +1,7 @@
 package banhaisan.controllers.baiviet;
 
-import banhaisan.models.businessmodels.BaiVietService;
-import banhaisan.models.businessmodels.NguoiDungThongThuongService;
+import banhaisan.models.datahandle.BaiVietService;
+import banhaisan.models.datahandle.NguoiDungThongThuongService;
 import banhaisan.models.datamodels.BaiViet;
 import banhaisan.models.datamodels.NguoiDung;
 
@@ -26,9 +26,8 @@ public class XoaBaiVietServlet extends HttpServlet {
         BaiViet baiViet = new BaiViet();
         baiViet.setMaBaiViet(idBaiViet);
         mes += idBaiViet;
-        BaiVietService service = new BaiVietService();
         try {
-            service.delete(baiViet);
+            BaiVietService.getInstance().delete(baiViet);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
             mes += " " + e.toString();

@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class DanhMucService extends ConnectDatabase implements Business<DanhMuc>{
+public class DanhMucService extends ConnectDatabase implements Business<DanhMuc> {
     private static final DanhMucService instance = new DanhMucService();
     private DanhMucService(){}
     public static DanhMucService getInstance(){
@@ -18,7 +18,7 @@ public class DanhMucService extends ConnectDatabase implements Business<DanhMuc>
         ArrayList<DanhMuc> danhMucs = new ArrayList<>();
         openConnection();
 
-        String query = "EXEC LayDanhMuc";
+        String query = "select * from dbo.vw_DanhSachDanhMuc";
         PreparedStatement statement = connection.prepareStatement(query);
         statement.setQueryTimeout(90);
         statement.setEscapeProcessing(true);
@@ -42,7 +42,7 @@ public class DanhMucService extends ConnectDatabase implements Business<DanhMuc>
             return null;
         }
         openConnection();
-        String query = "EXEC LayMotDanhMuc ?";
+        String query = "select * from dbo.fc_ChiTietDanhMuc(?)";
         PreparedStatement statement = connection.prepareStatement(query);
         statement.setEscapeProcessing(true);
         statement.setQueryTimeout(90);

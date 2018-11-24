@@ -1,6 +1,6 @@
 package banhaisan.controllers.baiviet;
 
-import banhaisan.models.businessmodels.BaiVietService;
+import banhaisan.models.datahandle.BaiVietService;
 import banhaisan.models.datamodels.BaiViet;
 
 import javax.servlet.RequestDispatcher;
@@ -20,9 +20,8 @@ public class BaiVietServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        BaiVietService service= new BaiVietService();
         try {
-            ArrayList<BaiViet> baiViets= service.getData();
+            ArrayList<BaiViet> baiViets= BaiVietService.getInstance().getData();
             request.setAttribute("baiViet", baiViets);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();

@@ -1,8 +1,8 @@
-package banhaisan.models.businessmodels;
+package banhaisan.models.datahandle;
+
+
 
 import banhaisan.models.datamodels.BaiViet;
-import banhaisan.models.datamodels.DanhMuc;
-import banhaisan.models.datamodels.NguoiDung;
 
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -11,9 +11,14 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class BaiVietService extends ConnectDatabase implements Business<BaiViet> {
-
+    private static final BaiVietService instance = new BaiVietService();
+    private BaiVietService(){}
+    public static BaiVietService getInstance(){
+        return instance;
+    }
     @Override
     public ArrayList<BaiViet> getData() throws SQLException, ClassNotFoundException {
+
         ArrayList<BaiViet> baiViets= new ArrayList<>();
         openConnection();
         String query = "select * from vw_LayBaiViet";
@@ -35,6 +40,28 @@ public class BaiVietService extends ConnectDatabase implements Business<BaiViet>
         return baiViets;
     }
 
+    public ArrayList<BaiViet> getTop4BaiViet() throws SQLException, ClassNotFoundException {
+        ArrayList<BaiViet> baiViets= new ArrayList<>();
+        openConnection();
+        String query = "select top 4 * from vw_LayBaiViet";
+        PreparedStatement statement = connection.prepareStatement(query);
+        statement.setQueryTimeout(90);
+        statement.setEscapeProcessing(true);
+
+        ResultSet resultSet = statement.executeQuery();
+        while (resultSet.next()){
+            BaiViet baiViet= new BaiViet();
+            baiViet.setMaBaiViet(resultSet.getString(1));
+            baiViet.setNgayDang(resultSet.getDate(2));
+            baiViet.setTieuDe(resultSet.getString(3));
+            baiViet.setNoiDung(resultSet.getString(4));
+
+            baiViets.add(baiViet);
+        }
+
+        closeConnection();
+        return baiViets;
+    }
     @Override
     public BaiViet get(Object... keys) throws SQLException, ClassNotFoundException {
         if(keys.length<=0){

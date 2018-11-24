@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> -->
 <!DOCTYPE html>
 <html lang="vi">
@@ -149,7 +150,7 @@
                                 <a class="navbar-brand" href="TrangChu.jsp" style="margin-left: 31%">
                                     <div class="logo"><img src="resources/images/CrabICO.png" alt=""> </div>
                                 </a>
-                                <h4 style="display:inline-block"><strong><a href="TrangChu.jsp">Tiêu Dân Seafood</strong></a></h4>
+                                <h4 style="display:inline-block"><strong><a href="TrangChu.jsp">Tiêu Dân Seafood</a></strong></h4>
                             </li>
                         </div>
                         <div class="col-lg-5 col-md-6 search-right">
@@ -164,11 +165,11 @@
                                     <li style="padding-right: 15pt">
                                         <p style="padding-bottom: 15pt"><strong><a href="tel:+01269220162">0168 xxxx
                                                     xxx</a></strong></p>
-                                        <p>Tổng đài miễn phí</a></p>
+                                        <p>Tổng đài miễn phí</p>
                                     </li>
                                     <li style="padding-right: 15pt">
                                         <p style="padding-bottom: 15pt"><strong><a href="#">CÔNG THỨC</a></strong></p>
-                                        <p>Đảm đang - Khéo léo</a></p>
+                                        <p>Đảm đang - Khéo léo</p>
                                     </li>
                                     <li style="position:relative" class="toyscart toyscart2 cart cart box_1">
                                         <form action="#" method="post" class="last">
@@ -204,11 +205,9 @@
                                     Sản phẩm
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="nav-link" href="Products.jsp">Cá</a>
-                                    <a class="nav-link " href="#!">Tôm</a>
-                                    <a class="nav-link " href="#!">Mực</a>
-                                    <a class="nav-link " href="#!">Cua - ghẹ</a>
-                                    <a class="nav-link " href="#!">Ngao - Sò - Ốc</a>
+                                    <c:forEach var="danhMuc" items="${requestScope.danhMucs}">
+                                        <a class="nav-link" href="Products.jsp">${danhMuc.tenDanhmuc}</a>
+                                    </c:forEach>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -221,6 +220,7 @@
                     </div>
                 </nav>
             </div>
+        </div>
     </header>
     <!-- Banner -->
     <div class="inner_page-banner one-img">
@@ -288,7 +288,7 @@
     <ul class="breadcrumb">
         <div class="container">
             <li><a href="TrangChu.jsp">Trang chủ</a></li>
-            <li>Cá</li>
+            <li>${sanPham.maDanhMuc}</li>
         </div>
     </ul>
     <div class="gap-element" style="display:block; height:auto; padding-top:30px"></div>
@@ -300,58 +300,22 @@
                     <div class="left-side">
                         <h3 class="agileits-sear-head">CÁC SẢN PHẨM LIÊN QUAN</h3>
                         <ul>
+                            <c:forEach var="sanPhamLQ" items="${requestScope.sanPhamLQ}">
                             <li>
                                 <a href="#!">
                                     <div class="image" style="display:flex;">
                                         <img src="resources/images/Fish/ca-chep-gion01.jpg">
                                         <div class="name">
-                                            <p>Cá chép giòn</p><br>
+                                            <p>${sanPhamLQ.tenSP}</p><br>
                                             <p>
-                                                <em>350.000đ/kg</em>
+                                                ${sanPhamLQ.giaSP}
+                                                <em>đ/kg</em>
                                             </p>
                                         </div>
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#!">
-                                    <div class="image" style="display:flex;">
-                                        <img src="resources/images/Fish/cabop01.jpg">
-                                        <div class="name">
-                                            <p>Cá bóp</p><br>
-                                            <p>
-                                                <em>150.000đ/kg</em>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <div class="image" style="display:flex;">
-                                        <img src="resources/images/Fish/ca-mu-nghe.png">
-                                        <div class="name">
-                                            <p>Cá mú</p><br>
-                                            <p>
-                                                <em>200.000đ/kg</em>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <div class="image" style="display:flex;">
-                                        <img src="resources/images/Fish/ca-ro-phi01.jpg">
-                                        <div class="name">
-                                            <p>Cá rô phi</p><br>
-                                            <p>
-                                                <em>120.000đ/kg</em>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                            </c:forEach>
                         </ul>
                     </div>
                     <hr>
@@ -359,36 +323,14 @@
                     <div class="left-side">
                         <h3 class="agileits-sear-head">BÀI VIẾT NỔI BẬT</h3>
                         <ul>
+                            <c:forEach var="baiViet" items="${requestScope.baiViets}">
                             <li>
                                 <a href="#!">
                                     <img src="resources/images/ca-mu-hap-hanh.jpg" width="70px" height="70px">
-                                    <p>Hướng dẫn làm món cá mú đỏ hấp bia cực ngon miệng</p>
+                                    <p>${baiViet.tieuDe}</p>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#!">
-                                    <img src="resources/images/ca-chep-hap--bia01.jpg" width="70px" height="30px">
-                                    <p class="span">Món cá chép hấp bia cách làm tại nhà đơn giản </p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <img src="resources/images/Foods/tom-su-rang-toi.jpg" width="30px" height="30px">
-                                    <p class="span">Bí quyết cho món tôm sú rang tỏi cực ngon</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <img src="resources/images/Foods/tom-tit-rang-me01.jpg" width="30px" height="30px">
-                                    <p class="span">Cùng thay đổi khẩu vị với món bề bề rang me</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <img src="resources/images/Foods/cua-rang-me01.jpg" width="30px" height="30px">
-                                    <p class="span">Đơn giản mà ngon, đó là cua rang me</p>
-                                </a>
-                            </li>
+                            </c:forEach>
                         </ul>
                     </div>
                     <!-- Bai Viet Noi Bat -->
@@ -419,11 +361,11 @@
                         </div>
                         <div class="col-md-4 col-sm-12 col-xs-12">
                             <div class="name">
-                                <h2 style="font-size: 45px">Cá mặt quỷ</h2>
+                                <h2 style="font-size: 45px">${sanPham.tenSP}</h2>
                             </div>
                             <hr>
                             <div style="font-size: 20px;text-align: center">
-                                <em>950.000đ<span>/kg</span></em>
+                                <em>${sanPham.giaSP}<span>đ/kg</span></em>
                                 <div class="gap-element" style="display:block; height:auto; padding-top:30px"></div>
                                 <form>
                                     <input type="number" min="1" value="1" style="width:50px">
@@ -432,7 +374,7 @@
                                 </form>
                             </div>
                             <hr>
-                            <h3>Danh mục:<a href="#!"><span id="danhmuc">CÁ</span></a></h3>
+                            <h3>Danh mục:<a href="/Products?idDM=${sanPham.maDanhMuc}"><span id="danhmuc">${sanPham.maDanhMuc}</span></a></h3>
                         </div>
                     </div>
                     <div class="gap-element" style="display:block; height:auto; padding-top:5px"></div>
@@ -445,17 +387,7 @@
                     <div id="detail" class="tabcontent" style="display: block">
                         <!-- <h3>London</h3> -->
                         <p>
-                            - Cá mặt quỷ thuộc họ cá mao mặt quỷ. Cá mặt quỷ có thân hình lớn, xù xì, nhiều vây ở sống
-                            lưng, thô kệch như một tảng đá với lớp da loang lổ màu nâu đỏ, sần sủi, lởm chởm gai góc.
-                            <br>
-                            – Cá mặt quỷ là một loài sát thủ của biển khơi. Chúng sống ở những vùng nước nông dọc bờ
-                            biển. Cá mặt quỷ nguyj trang rất tài tình, khi nó có màu nâu trông chẳng khác gì một tảng
-                            đá, vì vậy người ta còn gọi nó là cá đá.
-                            <br>
-                            - Trái ngược lại với vẻ ngoài đáng sợ đó cá mặt quỷ lại sở hữu những thớ thịt chắc, trong,
-                            giòn, ngọt, cá mặt quỷ ăn rất ngon, vị lạ miệng, giàu dưỡng chất omega 3 giúp tuần hoàn máu
-                            tốt, ngăn chặn sự hình thành huyết khối, giảm nguy cơ mắc bệnh tim, chống đột quỵ… Cá mặt
-                            quỷ có kích thước từ 1kg đến 3kg.
+                           ${sanPham.moTa}
                         </p>
                     </div>
                     <div id="comment" class="tabcontent">
@@ -563,6 +495,7 @@
                                 <div class="form-group">
                                     <label class="control-label">Đánh giá <span class="required">
                                             * </span>
+                                    </label>
                                         <div class="stars">
                                             <div class="rating">
                                                 <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
@@ -575,6 +508,7 @@
                                             <textarea class="col-md-10 form-control" rows="8"></textarea>
                                         </div>
                                         <button class="margin-top-20 btn blue" type="submit">Post a Comment</button>
+                                </div>
                             </form>
                         </div>
                     </div>

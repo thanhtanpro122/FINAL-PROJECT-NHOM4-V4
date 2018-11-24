@@ -1,3 +1,4 @@
+<!-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> -->
 <!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> -->
 <!DOCTYPE html>
 <html lang="vi">
@@ -39,23 +40,6 @@
     <!--bootstrap working-->
     <script src="resources/js/bootstrap.min.js"></script>
     <!-- //bootstrap working-->
-    <script>
-        //<![CDATA[ 
-        $(window).load(function () {
-            $("#slider-range").slider({
-                range: true,
-                min: 0,
-                max: 2500000,
-                values: [0, 1000000],
-                slide: function (event, ui) {
-                    $("#amount").val(ui.values[0] + "đ" + " - " + ui.values[1] + "đ");
-                }
-            });
-            $("#amount").val($("#slider-range").slider("values", 0) + "đ" + " - " + $("#slider-range").slider("values", 1) + "đ");
-
-        }); //]]>
-    </script>
-    <!-- Price Filtering -->
     <script>
         toys.render();
 
@@ -101,6 +85,12 @@
         });
     </script>
     <!-- //here ends scrolling icon -->
+    <script>
+        function run(){
+        document.getElementById("demo").value= document.getElementById("myRange").value;
+        }
+    </script>
+    <!-- Price Filtering -->
 </head>
 
 <body>
@@ -149,11 +139,11 @@
                                     <li style="padding-right: 15pt">
                                         <p style="padding-bottom: 15pt"><strong><a href="tel:+01269220162">0168 xxxx
                                                     xxx</a></strong></p>
-                                        <p>Tổng đài miễn phí</a></p>
+                                        <p>Tổng đài miễn phí</p>
                                     </li>
                                     <li style="padding-right: 15pt">
                                         <p style="padding-bottom: 15pt"><strong><a href="#">CÔNG THỨC</a></strong></p>
-                                        <p>Đảm đang - Khéo léo</a></p>
+                                        <p>Đảm đang - Khéo léo</p>
                                     </li>
                                     <li style="position:relative" class="toyscart toyscart2 cart cart box_1">
                                         <form action="#" method="post" class="last">
@@ -189,11 +179,9 @@
                                     Sản phẩm
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="nav-link" href="Products.jsp">Cá</a>
-                                    <a class="nav-link " href="#!">Tôm</a>
-                                    <a class="nav-link " href="#!">Mực</a>
-                                    <a class="nav-link " href="#!">Cua - ghẹ</a>
-                                    <a class="nav-link " href="#!">Ngao - Sò - Ốc</a>
+                                    <c:forEach var="danhMuc" items="${requestScope.danhMucs}">
+                                        <a class="nav-link" href="Products.jsp">${danhMuc.tenDanhmuc}</a>
+                                    </c:forEach>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -206,6 +194,7 @@
                     </div>
                 </nav>
             </div>
+        </div>
     </header>
     <!-- banner -->
     <div class="inner_page-banner one-img">
@@ -272,7 +261,7 @@
     <ul class="breadcrumb">
         <div class="container">
             <li><a href="#">Trang chủ</a></li>
-            <li>Cá</li>
+            <li>${maDanhMuc}</li>
             <div class="pull-right">
                 <label>Sắp xếp theo </label>
                 <select>
@@ -294,31 +283,31 @@
                         <h3 class="agileits-sear-head">DANH MỤC SẢN PHẨM</h3>
                         <ul>
                             <li>
-                                <a href="#!">
+                                <a href="/Products?idDM=ca">
                                     <img src="resources/images/FISHICO.png" class="category">
                                     <span class="span">Cá</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#!">
+                                <a href="/Products?idDM=tom">
                                     <img src="resources/images/SHRIMPICO.png" class="category">
                                     <span class="span">Tôm</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#!">
+                                <a href="/Products?idDM=muc">
                                     <img src="resources/images/CuttleFishICO.png" class="category">
                                     <span class="span">Mực</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#!">
+                                <a href="/Products?idDM=cua">
                                     <img src="resources/images/CrabICO.gif" class="category">
                                     <span class="span">Cua ghẹ</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#!">
+                                <a href="/Products?idDM=ngao-so-oc">
                                     <img src="resources/images/clamICO.png" class="category">
                                     <span class="span">Ngao - Sò - Ốc</span>
                                 </a>
@@ -326,183 +315,53 @@
                         </ul>
                     </div>
                     <!-- Price range -->
-                    <div class="range">
-                        <h3 class="agileits-sear-head">LỌC</h3>
-                        <ul style="position:relative">
-                            <li>
-
-                                <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
-                                    <div class="ui-slider-range ui-widget-header" style="left: 0.555556%; width: 55.5111%;"></div><a
-                                        class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0.555556%;"></a><a
-                                        class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 56.0667%;"></a>
-                                </div>
-                                <input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;">
-                            </li>
-                        </ul>
-                        <button class="button buttonred roundedbutton" style="margin-top:25px">LỌC</button>
+                    <div class="slidecontainer">
+                        <input oninput="run()" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        <p>Value: <input id="demo" value=""></input></p>
                     </div>
+
                     <!-- Price range -->
                     <!-- Bai Viet Noi Bat -->
                     <div class="gap-element" style="display:block; height:auto; padding-top:30px"></div>
                     <div class="left-side">
                         <h3 class="agileits-sear-head">BÀI VIẾT NỔI BẬT</h3>
                         <ul>
-                            <li>
-                                <a href="#!">
-                                    <img src="resources/images/ca-mu-hap-hanh.jpg" width="70px" height="70px">
-                                    <p>Hướng dẫn làm món cá mú đỏ hấp bia cực ngon miệng</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <img src="resources/images/ca-chep-hap--bia01.jpg" width="70px" height="30px">
-                                    <p class="span">Món cá chép hấp bia cách làm tại nhà đơn giản </p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <img src="resources/images/Foods/tom-su-rang-toi.jpg" width="30px" height="30px">
-                                    <p class="span">Bí quyết cho món tôm sú rang tỏi cực ngon</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <img src="resources/images/Foods/tom-tit-rang-me01.jpg" width="30px" height="30px">
-                                    <p class="span">Cùng thay đổi khẩu vị với món bề bề rang me</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <img src="resources/images/Foods/cua-rang-me01.jpg" width="30px" height="30px">
-                                    <p class="span">Đơn giản mà ngon, đó là cua rang me</p>
-                                </a>
-                            </li>
+                            <c:forEach var="baiViet" items="${requestScope.baiViets}">
+                                <li>
+                                    <a href="#!">
+                                        <img src="resources/images/ca-mu-hap-hanh.jpg" width="70px" height="70px">
+                                        <p>${baiViet.tieuDe}</p>
+                                    </a>
+                                </li>
+                            </c:forEach>
                         </ul>
                     </div>
                     <!-- Bai Viet Noi Bat -->
                 </div>
                 <div class="col-md-9">
                     <div class="row">
-                        <div class="col-lg-20 col-md-4 col-sm-4 col-xs-6">
-                            <div class="product-item">
-                                <div class="image" style="height:auto">
-                                    <a href=#><img src="resources/images/Fish/ca-chep-gion01.jpg"></a></div>
-                                <div class="name">
-                                    <a href="#!">Cá chép giòn</a>
-                                </div>
-                                <div class="price">
-                                    <em>
-                                        200,000đ
-                                        <span class="variant_title">/kg</span>
-                                    </em>
-                                </div>
-                                <div class="addcart">
-                                    <button class="addtocart">
-                                        THÊM VÀO GIỎ
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-20 col-md-4 col-sm-4 col-xs-6">
-                            <div class="product-item">
-                                <div class="image" style="height:auto">
-                                    <a href=#><img src="resources/images/Fish/ca-mu-nghe.png"></a></div>
-                                <div class="name">
-                                    <a href="#!">Cá mú nghệ</a>
-                                </div>
-                                <div class="price">
-                                    <em>
-                                        390,000đ
-                                        <span class="variant_title">/kg</span>
-                                    </em>
-                                </div>
-                                <div class="addcart">
-                                    <button class="addtocart">
-                                        THÊM VÀO GIỎ
-                                    </button>
+                        <c:forEach var="sanPhams" items="${requestScope.sanPhams}">
+                            <div class="col-lg-20 col-md-4 col-sm-4 col-xs-6">
+                                <div class="product-item">
+                                    <div class="image" style="height:auto">
+                                        <a href=/CTSanPham?idSP=${sanPhams.maSP}> <img src="resources/images/Fish/ca-chep-gion01.jpg"></a></div>
+                                    <div class="name">
+                                        <a href="/CTSanPham?idSP=${sanPhams.maSP}">${sanPhams.tenSP}</a>
+                                    </div>
+                                    <div class="price">
+                                        <em>
+                                            ${sanPhams.giaSP}
+                                            <span class="variant_title">/kg</span>
+                                        </em>
+                                    </div>
+                                    <div class="addcart">
+                                        <button class="addtocart">
+                                            THÊM VÀO GIỎ
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-20 col-md-4 col-sm-4 col-xs-6">
-                            <div class="product-item">
-                                <div class="image" style="height:auto">
-                                    <a href=#><img src="resources/images/Fish/cabop01.jpg"></a></div>
-                                <div class="name">
-                                    <a href="#!">Cá bớp</a>
-                                </div>
-                                <div class="price">
-                                    <em>
-                                        290,000đ
-                                        <span class="variant_title">/kg</span>
-                                    </em>
-                                </div>
-                                <div class="addcart">
-                                    <button class="addtocart">
-                                        THÊM VÀO GIỎ
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-20 col-md-4 col-sm-4 col-xs-6">
-                            <div class="product-item">
-                                <div class="image" style="height:auto">
-                                    <a href="ChiTietSP.jsp"><img src="resources/images/Fish/ca-mat-quy01.jpg"></a></div>
-                                <div class="name">
-                                    <a href="ChiTietSP.jsp">Cá mặt quỷ</a>
-                                </div>
-                                <div class="price">
-                                    <em>
-                                        950,000đ
-                                        <span class="variant_title">/kg</span>
-                                    </em>
-                                </div>
-                                <div class="addcart">
-                                    <button class="addtocart">
-                                        THÊM VÀO GIỎ
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-20 col-md-4 col-sm-4 col-xs-6">
-                            <div class="product-item">
-                                <div class="image" style="height:auto">
-                                    <a href=#><img src="resources/images/Fish/ca-ro-phi01.jpg"></a></div>
-                                <div class="name">
-                                    <a href="#!">Cá rô phi</a>
-                                </div>
-                                <div class="price">
-                                    <em>
-                                        40,000đ
-                                        <span class="variant_title">/kg</span>
-                                    </em>
-                                </div>
-                                <div class="addcart">
-                                    <button class="addtocart">
-                                        THÊM VÀO GIỎ
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-20 col-md-4 col-sm-4 col-xs-6">
-                            <div class="product-item">
-                                <div class="image" style="height:auto">
-                                    <a href=#><img src="resources/images/Fish/CaChim1.jpg"></a></div>
-                                <div class="name">
-                                    <a href="#!">Cá chim</a>
-                                </div>
-                                <div class="price">
-                                    <em>
-                                        290,000đ
-                                        <span class="variant_title">/kg</span>
-                                    </em>
-                                </div>
-                                <div class="addcart">
-                                    <button class="addtocart">
-                                        THÊM VÀO GIỎ
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                        </c:forEach>
 
                         <hr>
                         <!-- <div class="row"> -->
@@ -550,7 +409,7 @@
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">MENU</h6>
                     <p>
-                        <a href="TrangChu.jsp">Trang chủ</a>
+                        <a href="/Index">Trang chủ</a>
                     </p>
                     <p>
                         <a href="About.jsp">Giới thiệu</a>

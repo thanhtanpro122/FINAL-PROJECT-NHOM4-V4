@@ -6,14 +6,14 @@ public class SanPham {
     private String maSP;
     private String tenSP;
     private double giaSP;
-    private int phanTramKhuyenMai;
+    private float phanTramKhuyenMai;
     private String maDanhMuc;
     private String xuatXu;
     private String moTa;
     private Date ngayNhap;
     public SanPham() {    }
 
-    public SanPham(String maSP, String tenSP, double giaSP, int phanTramKhuyenMai, String maDanhMuc, String xuatXu, String moTa, Date ngayNhap) {
+    public SanPham(String maSP, String tenSP, double giaSP, float phanTramKhuyenMai, String maDanhMuc, String xuatXu, String moTa, Date ngayNhap) {
         this.maSP = maSP;
         this.tenSP = tenSP;
         this.giaSP = giaSP;
@@ -48,11 +48,11 @@ public class SanPham {
         this.giaSP = giaSP;
     }
 
-    public int getPhanTramKhuyenMai() {
+    public float getPhanTramKhuyenMai() {
         return phanTramKhuyenMai;
     }
 
-    public void setPhanTramKhuyenMai(int phanTramKhuyenMai) {
+    public void setPhanTramKhuyenMai(float phanTramKhuyenMai) {
         this.phanTramKhuyenMai = phanTramKhuyenMai;
     }
 

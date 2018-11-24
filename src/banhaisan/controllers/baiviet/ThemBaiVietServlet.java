@@ -1,7 +1,7 @@
 package banhaisan.controllers.baiviet;
 
-import banhaisan.models.businessmodels.BaiVietService;
-import banhaisan.models.businessmodels.DanhMucService;
+import banhaisan.models.datahandle.BaiVietService;
+import banhaisan.models.datahandle.DanhMucService;
 import banhaisan.models.datamodels.BaiViet;
 import banhaisan.models.datamodels.DanhMuc;
 
@@ -30,9 +30,8 @@ public class ThemBaiVietServlet extends HttpServlet {
         baiViet.setNgayDang(new java.sql.Date(ngayDangBai.getTime()));
 
 
-        BaiVietService service= new BaiVietService();
         try {
-            service.add(baiViet);
+            BaiVietService.getInstance().add(baiViet);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
