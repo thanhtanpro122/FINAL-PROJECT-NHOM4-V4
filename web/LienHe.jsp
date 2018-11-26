@@ -97,11 +97,11 @@
                 <p><a href="mailto:info@example.com">tieudanseafood@gmail.com</a></p>
               </li>
               <li class="float-md-right">
-                <span class="fas fa-user"></span>
-                <p><a data-toggle="modal" href="#LoginModal">Đăng nhập</a></p>
-                <p>|</p>
-                <p><a href="#">Đăng ký</a></p>
-              </li>
+              <span class="fas fa-user"></span>
+              <p><a data-toggle="modal" href="#LoginModal">Đăng nhập</a></p>
+              <p>|</p>
+              <p><a href="#">Đăng ký</a></p>
+            </li>
             </ul>
           </div>
         </div>
@@ -126,11 +126,11 @@
                 <ul style="text-align:start">
                   <li style="padding-right: 15pt">
                     <p style="padding-bottom: 15pt"><strong><a href="tel:+01269220162">0168 xxxx xxx</a></strong></p>
-                    <p>Tổng đài miễn phí</a></p>
+                    <p>Tổng đài miễn phí</p>
                   </li>
                   <li style="padding-right: 15pt">
                     <p style="padding-bottom: 15pt"><strong><a href="#">CÔNG THỨC</a></strong></p>
-                    <p>Đảm đang - Khéo léo</a></p>
+                    <p>Đảm đang - Khéo léo</p>
                   </li>
                   <li style="position:relative" class="toyscart toyscart2 cart cart box_1">
                     <form action="#" method="post" class="last">
@@ -183,6 +183,7 @@
           </div>
         </nav>
       </div>
+    </div>
   </header>
 
   <!-- banner -->
@@ -250,7 +251,7 @@
       </div>
     </div>
   </div>
-  <div class="gap-element" style="display:block; height:auto; padding-bottom:20x"></div>
+  <div class="gap-element" style="display:block; height:auto; padding-bottom:20px"></div>
   <!-- Modal 1-->
   <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">

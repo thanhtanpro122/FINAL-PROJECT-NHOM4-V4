@@ -1,5 +1,5 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> -->
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -174,12 +174,24 @@
                                 <span class="fas fa-envelope"></span>
                                 <p><a href="mailto:info@example.com">tieudanseafood@gmail.com</a></p>
                             </li>
+                            <c:choose>
+                                <c:when test="${currentSessionUser == null}">
                             <li class="float-md-right">
                                 <span class="fas fa-user"></span>
-                                <p>Chào <a href="Profile.jsp">Diêu</a></p>
+                                <p><a data-toggle="modal" href="#LoginModal">Đăng nhập</a></p>
                                 <p>|</p>
-                                <p><a href="TrangChu.jsp">Thoát</a></p>
+                                <p><a href="#">Đăng ký</a></p>
                             </li>
+                                </c:when>
+                                <c:otherwise>
+                            <li class="float-md-right">
+                                <span class="fas fa-user"></span>
+                                <p>Chào <a href="/Profile">${currentSessionUser.hoTen}</a></p>
+                                <p>|</p>
+                                <p><a href="/Logout">Thoát</a></p>
+                            </li>
+                                </c:otherwise>
+                            </c:choose>
                         </ul>
                     </div>
                 </div>
@@ -331,14 +343,21 @@
                 </div>
                 <div class="modal-body">
                     <div class="register-form">
-                        <form action="#" method="post" onsubmit="return checkForm(this)">
+                        <form action="/Login" onsubmit="return checkForm(this)">
                             <div class="fields-grid">
                                 <div class="styled-input">
-                                    <input type="email" placeholder="Email của bạn" name="Your Email" required="">
+                                    <input type="email" placeholder="Email của bạn" name="email" required="">
                                 </div>
                                 <div class="styled-input">
                                     <input type="password" placeholder="Nhập password" name="password" required="">
                                 </div>
+                                <%
+                                    if(request.getAttribute("loginResult") != null && request.getAttribute("loginResult") == "true"){
+                                %>
+                                <p style="color:red"> Login Failed. Please try again. </p>
+                                <%
+                                    }
+                                %>
                                 <button type="submit" class="btn subscrib-btnn">Đăng nhập</button>
                             </div>
                         </form>
