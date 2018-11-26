@@ -239,7 +239,7 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                     <ul class="navbar-nav ">
                         <li class="nav-item active">
-                            <a class="nav-link" href="TrangChu.jsp">Trang chủ <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/Index">Trang chủ <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="/GioiThieu" class="nav-link">Giới thiệu</a>
@@ -343,12 +343,6 @@
                             <div class="styled-input">
                                 <input type="password" placeholder="Nhập password" name="password" required="">
                             </div>
-                            <c:if test="${loginResult == false}">
-                                <div class="alert">
-                                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                                    Sai tài khoản hoặc mật khẩu !!
-                                </div>
-                            </c:if>
                             <button type="submit" class="btn subscrib-btnn">Đăng nhập</button>
                         </div>
                     </form>

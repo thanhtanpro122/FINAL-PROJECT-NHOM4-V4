@@ -32,6 +32,7 @@ public class BaiVietService extends ConnectDatabase implements Business<BaiViet>
             baiViet.setMaBaiViet(resultSet.getString(1));
             baiViet.setNgayDang(resultSet.getDate(2));
             baiViet.setTieuDe(resultSet.getString(3));
+            baiViet.setNoiDung(resultSet.getString(4));
 
             baiViets.add(baiViet);
         }
