@@ -96,7 +96,7 @@
                                         <span class="fas fa-user"></span>
                                         <p><a data-toggle="modal" href="#LoginModal">Đăng nhập</a></p>
                                         <p>|</p>
-                                        <p><a href="#">Đăng ký</a></p>
+                                        <p><a href="/DangKyThanhVien">Đăng ký</a></p>
                                     </li>
                                 </c:when>
                                 <c:otherwise>
