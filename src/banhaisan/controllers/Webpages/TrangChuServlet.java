@@ -1,4 +1,4 @@
-package banhaisan.controllers.TrangChu;
+package banhaisan.controllers.Webpages;
 
 import banhaisan.models.datahandle.BaiVietService;
 import banhaisan.models.datahandle.DanhMucService;
@@ -8,6 +8,7 @@ import banhaisan.models.datamodels.DanhMuc;
 import banhaisan.models.datamodels.SanPham;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

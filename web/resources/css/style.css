@@ -324,7 +324,7 @@ div.gallery {
 div.gallery:hover {
     border: 1px solid #777;
     box-shadow: 10px 10px 8px #888888;
-    transform: scale3d();
+    /*transform: scale3d();*/
     animation-direction: reverse;
     transition-property: inherit;
     transition-duration: .8s;
@@ -334,7 +334,7 @@ div.gallery:hover {
 div.card:hover{
     border: 1px solid #777;
     box-shadow: 10px 10px 8px #888888;
-    transform: scale3d();
+    /*transform: scale3d();*/
     animation-direction: reverse;
     transition-property: inherit;
     transition-duration: .8s;
@@ -1563,7 +1563,7 @@ strong a{
 .blue.btn {
     color: #FFFFFF;
     background-color: #4B8DF8;
-    border-color: "";
+    /*border-color: "";*/
 }
 .roundedbutton{
     border-radius: 50%;
@@ -2234,4 +2234,28 @@ div.card-deck{
 }
 .card-title{
     text-align: center;
+}
+--Alert--
+.alert1 {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* The close button */
+.exitbtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
 }

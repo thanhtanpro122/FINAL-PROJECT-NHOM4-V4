@@ -18,8 +18,7 @@ public class NguoiDungThongThuongServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
-            NguoiDungThongThuongService service= new NguoiDungThongThuongService();
-            ArrayList<NguoiDung> nguoiDungs= service.getData();
+            ArrayList<NguoiDung> nguoiDungs= NguoiDungThongThuongService.getInstance().getData();
 
             request.setAttribute("nguoiDungs" , nguoiDungs);
 

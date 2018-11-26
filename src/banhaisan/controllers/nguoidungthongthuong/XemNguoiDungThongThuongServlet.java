@@ -20,10 +20,9 @@ public class XemNguoiDungThongThuongServlet extends HttpServlet {
             response.setStatus(400);
             return;
         }
-        NguoiDungThongThuongService nguoiDung = new NguoiDungThongThuongService();
         NguoiDung nd = null;
         try {
-            nd = nguoiDung.get(idNguoiDung);
+            nd = NguoiDungThongThuongService.getInstance().get(idNguoiDung);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }

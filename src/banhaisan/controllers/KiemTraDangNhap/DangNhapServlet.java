@@ -63,10 +63,8 @@ public class DangNhapServlet extends HttpServlet {
                 }
             }
             else {
-//                response.sendRedirect("/DangKi.jsp");
                 request.setAttribute("loginResult", false);
-                RequestDispatcher rd = request.getRequestDispatcher("/index-Login.jsp");
-                rd.forward(request,response);
+                response.sendRedirect(request.getContextPath()+backrefresh);
             }
         }catch (SQLException | ClassNotFoundException e)
         {

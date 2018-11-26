@@ -268,10 +268,10 @@
                             </strong>
                         </div>
                         <ul class="list-group margin-bottom-25 sidebar-menu">
-                            <li class="list-group-item clearfix"><a href="Profile.jsp"><i class="fa fa-angle-right"></i>
+                            <li class="list-group-item clearfix"><a href="/Profile"><i class="fa fa-angle-right"></i>
                                     Thông
                                     tin tài khoản</a></li>
-                            <li class="list-group-item clearfix"><a href="Profile_Password.jsp"><i class="fa fa-angle-right"></i>
+                            <li class="list-group-item clearfix"><a href="/DoiMatKhau"><i class="fa fa-angle-right"></i>
                                     Đổi mật
                                     khẩu</a></li>
                             <li class="list-group-item clearfix"><a href="Profile_BillManagement.jsp"><i class="fa fa-angle-right"></i>
